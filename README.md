@@ -1,4 +1,5 @@
 # Basic Java Practic
+<<<<<<< HEAD
  [I Learn from Hear](https://www.programiz.com/java-programming/examples)
 
 
@@ -16,3 +17,7 @@
 <img width="696" alt="image" src="https://user-images.githubusercontent.com/78966839/191804313-cdbf8baa-c142-474a-889e-ebd7269a2b9e.png">
 
 
+=======
+
+[I Learn from Hear](https://www.programiz.com/java-programming/examples)
+>>>>>>> 477e98e (first commit)

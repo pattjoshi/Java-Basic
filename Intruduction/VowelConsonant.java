@@ -16,5 +16,7 @@ public class VowelConsonant {
             System.out.println(ch + " is Consonant");
         }
         sc.close();
+        // why it is slow? because it is not optimized
+        // You can use switch case statement instead of if else statement.
     }
 }

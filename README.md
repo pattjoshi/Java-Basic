@@ -21,11 +21,7 @@
 
 [I Learn from Hear](https://www.programiz.com/java-programming/examples)
 
-
 [90 DAY DSA](https://whimsical.com/dsa-in-90-days-EmPkf5utoFGRMnRqJjM6YV)
-
-
-
 
 ## Create a repo in github and add your project to the repo as following :-
 
@@ -33,7 +29,7 @@
 git init
 git add .
 git commit -m "first commit"
-git branch -M main
+git branch -M master
 git remote add origin https://github.com/pattjoshi/CURD-react.git
-git push -u origin main
+git push -u origin master
 ```

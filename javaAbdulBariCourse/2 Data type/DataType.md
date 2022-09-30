@@ -47,7 +47,8 @@
 
          False is represented using ‘false’
 
-# 1 ss 2.16
+<img width="907" alt="image" src="https://user-images.githubusercontent.com/78966839/193257612-fb320235-aab1-45ef-b80e-5bc95dcae04c.png">
+
 
 ### To know size of a data type is
 
@@ -64,7 +65,9 @@
 ➢ Variables are names given to store data in memory allocaton.
 ➢ Variables are to be declared and initalised.
 
-# 3ss 3.24
+
+<img width="933" alt="image" src="https://user-images.githubusercontent.com/78966839/193257767-9906f86a-786a-4e76-9ff2-83dae33c6ca0.png">
+
 
 ### Rules to name variables:
 
@@ -80,35 +83,42 @@
 
 # Literals
 
-# ss 013 :- 3.12
 
-# ss 013 :- 6.30
 
-# ss 013 :- 11.6
+- constant values(numbers) used in a program.
+- there are different types of literals:
+---
+- int literals- representng integer type.
+- float and double literals- representng decimal type.
+- char literals-representng characters in single quotes.
+- string literals-representng characters in double quotes.
+- Literals are wriRen based upon the data types:
+- int literal – int, short and byte.
+- int literals can be represented in different number systems:
+     - Decimal.
+      - Binary.
+     - Octal.
+     -  Hexadecimal.
+- L or l – long.
+- F or f – float.
+- D or d – double.
+- ’’ – char.
+- true/false – Boolean
 
-# ss 014:- 11.05
 
-# ss 016:- 4.12
+<img width="930" alt="image" src="https://user-images.githubusercontent.com/78966839/193257947-7a224d01-b766-447f-93cf-2763be6005e5.png">
 
-# ss 016:- 7.22
 
-➢ constant values(numbers) used in a program.
-➢ there are different types of literals:
-• int literals- representng integer type.
-• float and double literals- representng decimal type.
-• char literals-representng characters in single quotes.
-• string literals-representng characters in double quotes.
-➢ Literals are wriRen based upon the data types:
-➔ int literal – int, short and byte.
-• int literals can be represented in different number systems:
-Decimal.
-Binary.
-Octal.
-Hexadecimal.
-• L or l – long.
-• F or f – float.
-• D or d – double.
-• ’’ – char.
-• true/false – Boolean
+<img width="850" alt="image" src="https://user-images.githubusercontent.com/78966839/193258045-a1a1912a-bf07-4cdb-a3f8-7d858c7e5c3b.png">
+
+<img width="911" alt="image" src="https://user-images.githubusercontent.com/78966839/193258147-b982093e-22f7-45ad-8138-45762ed427f6.png">
+
+
+<img width="861" alt="image" src="https://user-images.githubusercontent.com/78966839/193258437-d79fb9ba-9e53-432c-9ca7-d5c224c237cf.png">
+
+<img width="666" alt="image" src="https://user-images.githubusercontent.com/78966839/193258574-25cdac2f-6219-47ab-8feb-ee9ebd4388f5.png">
+
+<img width="792" alt="image" src="https://user-images.githubusercontent.com/78966839/193258730-f65aff2f-41c4-455b-838b-bae378bb2657.png">
+
 
 ---

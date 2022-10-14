@@ -1,5 +1,7 @@
 # Basic Java Practic
 
+# There is nothing loss and wasted in life.
+
 <<<<<<< HEAD
 [I Learn from Hear](https://www.programiz.com/java-programming/examples)
 

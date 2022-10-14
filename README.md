@@ -2,6 +2,8 @@
 
 # There is nothing loss and wasted in life.
 
+# Hard work + Consistency + Guidance -> Success
+
 <<<<<<< HEAD
 [I Learn from Hear](https://www.programiz.com/java-programming/examples)
 

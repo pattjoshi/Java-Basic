@@ -3,6 +3,7 @@
 <img width="660" alt="image" src="https://user-images.githubusercontent.com/78966839/195996369-b6aaeb5f-ad5b-4860-b24a-48d5550a8bca.png">
 
 ## Variables in java
+
 <img width="749" alt="image" src="https://user-images.githubusercontent.com/78966839/195997524-f63e9eff-a83d-4537-bed2-b534f71f9a24.png">
 
 Literal:- constant
@@ -10,6 +11,7 @@ variable :- change
 Identifier :- Name in java (variable name)
 
 ## Memort
+
 <img width="735" alt="image" src="https://user-images.githubusercontent.com/78966839/195997724-715ba962-da1c-45f8-8242-9ebccdc89453.png">
 
 ```
@@ -28,7 +30,9 @@ public class javaBasic {
     }
 }
 ```
+
 ---
+
 # Data Type in Java
 
 <img width="764" alt="image" src="https://user-images.githubusercontent.com/78966839/195998242-7d50d41c-88e1-475c-aefd-5a7983545be2.png">
@@ -37,11 +41,12 @@ public class javaBasic {
 
 <img width="936" alt="image" src="https://user-images.githubusercontent.com/78966839/195998631-d0296918-effa-477a-b37a-a7e56b50c6fb.png">
 
-
 # Sum of a & b
+
 <img width="609" alt="image" src="https://user-images.githubusercontent.com/78966839/195998746-a2b0a4fe-8155-40c8-aefb-1e227fd68d1d.png">
 
 # Sum of a & b in Memory
+
 <img width="744" alt="image" src="https://user-images.githubusercontent.com/78966839/195998864-77c4adc6-ea52-46ac-b2ba-068dc89c9fb6.png">
 
 ```
@@ -56,12 +61,14 @@ public class javaBasic {
     }
 }
 ```
+
 # Comment
+
 <img width="586" alt="image" src="https://user-images.githubusercontent.com/78966839/195999096-477e4e27-9fe2-4e5d-9fe4-a9b9d5436103.png">
 
-# input 
-<img width="528" alt="image" src="https://user-images.githubusercontent.com/78966839/195999427-71d301fc-2618-4715-9bbe-bd6fd96b0706.png">
+# input
 
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/78966839/195999427-71d301fc-2618-4715-9bbe-bd6fd96b0706.png">
 
 ```
 import java.util.Scanner;
@@ -78,7 +85,8 @@ public class javaBasic {
 }
 ```
 
-# Sum of a and b user input 
+# Sum of a and b user input
+
 ```
 import java.util.Scanner;
 
@@ -96,6 +104,7 @@ public class javaBasic {
 ```
 
 # Area of a circle
+
 ```
 import java.util.Scanner;
 
@@ -115,6 +124,7 @@ public class javaBasic {
 ```
 
 # Type Conversion
+
 <img width="760" alt="image" src="https://user-images.githubusercontent.com/78966839/196001797-f7df97b5-e6c0-420a-b815-d7daf1cc5a49.png">
 
 # Type casting
@@ -141,14 +151,12 @@ public class javaBasic {
 
 <img width="666" alt="image" src="https://user-images.githubusercontent.com/78966839/196002804-f80f64c4-bad8-47a0-8da8-e75e5e7c869a.png">
 
-
-
 # How is our code Running ?
 
 <img width="460" alt="image" src="https://user-images.githubusercontent.com/78966839/196002987-98f5815b-a010-4155-8f26-b43d484be6ad.png">
 
-
 <img width="724" alt="image" src="https://user-images.githubusercontent.com/78966839/196002974-4147ac62-602a-4cb3-b87a-b851d5ccd135.png">
+<<<<<<< HEAD
 
 ---
 
@@ -166,3 +174,5 @@ public class javaBasic {
 
 
 
+=======
+>>>>>>> 565b3d5 (solve the Practic qus)

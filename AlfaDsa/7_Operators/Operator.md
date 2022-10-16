@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Operator in Java
 
 <img width="762" alt="image" src="https://user-images.githubusercontent.com/78966839/196019541-57389553-2caf-4cec-8659-1436bc432b24.png">
@@ -101,3 +102,5 @@ public class IncDec {
 
 
 
+=======
+>>>>>>> a800851 (operator)

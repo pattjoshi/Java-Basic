@@ -150,6 +150,12 @@ public class javaBasic {
 
 <img width="724" alt="image" src="https://user-images.githubusercontent.com/78966839/196002974-4147ac62-602a-4cb3-b87a-b851d5ccd135.png">
 
+---
+
+<img width="352" alt="image" src="https://user-images.githubusercontent.com/78966839/196019162-69428b02-0136-464f-8435-1d6670fb942f.png">
+
+## Solution
+<img width="505" alt="image" src="https://user-images.githubusercontent.com/78966839/196019139-e8fb648b-78e8-4edc-a1be-7ac853af0cce.png">
 
 
 

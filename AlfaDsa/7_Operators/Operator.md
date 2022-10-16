@@ -112,9 +112,12 @@ public class relationalOperator {
 # Assigment Operators
 <img width="827" alt="image" src="https://user-images.githubusercontent.com/78966839/196036648-dda71775-416b-4112-8001-1c0a2cc8c774.png">
 
+<img width="358" alt="image" src="https://user-images.githubusercontent.com/78966839/196047447-4004a7cb-d605-439d-86ee-b4f143451a7d.png">
+
+<img width="366" alt="image" src="https://user-images.githubusercontent.com/78966839/196047471-05f3d0ac-be6a-46e4-bcbd-e8d239f1fe6c.png">
 
 
-
+<img width="402" alt="image" src="https://user-images.githubusercontent.com/78966839/196047410-ce3043ac-4370-4d55-98e2-aaf61c1990f0.png">
 
 
 

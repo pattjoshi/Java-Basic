@@ -71,6 +71,46 @@ public class IncDec {
 
 <img width="680" alt="image" src="https://user-images.githubusercontent.com/78966839/196020386-43ba067d-7d83-4888-ac27-c2a3d24cafe4.png">
 
+---
+# Relational Operators
+<img width="866" alt="image" src="https://user-images.githubusercontent.com/78966839/196035694-8ee76a01-fed9-40a6-aeb1-e2b070938b67.png">
+
+
+```
+public class relationalOperator {
+    public static void main(String args[]) {
+        int a = 10;
+        int b = 9;
+        System.out.println(a == b); // false
+        System.out.println(a != b); // true
+        System.out.println(a > b); // true Grater
+        System.out.println(a < b); // false Less
+        int a1 = 10;
+        int b2 = 11;
+        System.out.println(a1 >= b2); // False
+        System.out.println(a1 <= b2); // t
+
+    }
+
+}
+```
+# Logical Operators
+
+
+## AND (both true then true)
+<img width="797" alt="image" src="https://user-images.githubusercontent.com/78966839/196036337-dc7a5208-91a8-4d00-870b-433b0df9d3de.png">
+
+## OR (One true then true) 
+<img width="759" alt="image" src="https://user-images.githubusercontent.com/78966839/196036496-0aec2ae1-229e-4b4a-8ab7-ba37ad53f32b.png">
+
+# Logical NOT
+
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/78966839/196036553-d84d5c2a-4133-4b62-aab0-5aaca73b606d.png">
+
+---
+
+# Assigment Operators
+<img width="827" alt="image" src="https://user-images.githubusercontent.com/78966839/196036648-dda71775-416b-4112-8001-1c0a2cc8c774.png">
 
 
 
@@ -89,18 +129,3 @@ public class IncDec {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> a800851 (operator)

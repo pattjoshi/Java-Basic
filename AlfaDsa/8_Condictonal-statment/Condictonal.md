@@ -125,5 +125,114 @@ public class Large3Num {
     }
 }
 ```
+---
+# Ternary Operator
+<img width="857" alt="image" src="https://user-images.githubusercontent.com/78966839/196220953-1169e042-af3f-44b6-8ca2-8427bb26c5fb.png">
+
+```
+public class Tar {
+    public static void main(String[] args) {
+        // Number is Even using ternary Operater
+        int num = 2;
+        String type = (num % 2 == 0) ? "Even" : "Odd";
+        System.out.println(type);
+    }
+
+}
+```
+
+## Pass of Fail using ternary Operator
+```
+import java.util.Scanner;
+
+public class PassFail {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your Mark");
+        int marks = sc.nextInt();
+        String Status = (marks > 33) ? "Pass" : "Fail";
+        System.out.println("Your Report is " + Status);
+        sc.close();
+    }
+}
+```
+
+# Switch Statement
+
+<img width="758" alt="image" src="https://user-images.githubusercontent.com/78966839/196225312-a3bb4a8e-dd1d-4721-beb9-7d465ae04380.png">
+
+<img width="830" alt="image" src="https://user-images.githubusercontent.com/78966839/196226506-c501c7c9-94be-4f7c-beea-bc445d63b3a3.png">
+
+```
+public class SwitchStatment {
+    public static void main(String[] args) {
+        int num = 3;
+        switch (num) {
+            case 1:
+                System.out.println("Pizza");
+                break;
+            case 2:
+                System.out.println("Burger");
+                break;
+            case 3:
+                System.out.println("Mango Shake");
+                break;
+            default:
+                System.out.println("Invalid Input");
+        }
+    }
+}
+```
+
+# Calculater 
+
+```
+import java.util.Scanner;
+
+public class Calc {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter num 1 :- ");
+        int a = sc.nextInt();
+        System.out.println("Enter Num 2 :- ");
+        int b = sc.nextInt();
+        System.out.println("Enter Operater");
+        char operater = sc.next().charAt(0);
+        switch (operater) {
+            case '+':
+                System.out.println(a + b);
+                break;
+            case '-':
+                System.out.println(a - b);
+                break;
+
+            case '*':
+                System.out.println(a * b);
+                break;
+
+            case '/':
+                System.out.println(a / b);
+                break;
+            default:
+                System.out.println("Invalid Entry");
+        }
+    }
+}
+
+```
+
+# Practic qua
+
+<img width="375" alt="image" src="https://user-images.githubusercontent.com/78966839/196232922-b674b520-2577-41ab-83d7-f397283ef76b.png">
+
+<img width="884" alt="image" src="https://user-images.githubusercontent.com/78966839/196233036-b6a5d9a9-9c15-4c5a-8db4-895de37b5d05.png">
+
+# Solution
+
+<img width="366" alt="image" src="https://user-images.githubusercontent.com/78966839/196233175-4419714a-d989-46d9-a93f-9825139a5206.png">
+
+<img width="370" alt="image" src="https://user-images.githubusercontent.com/78966839/196233333-0520992e-d4b7-476d-9f24-7edc7eebb75e.png">
+
+<img width="377" alt="image" src="https://user-images.githubusercontent.com/78966839/196233649-89d37d43-030d-47a5-8fb7-0e74f6fa15b7.png">
 
 

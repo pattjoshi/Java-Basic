@@ -98,11 +98,32 @@ public class IncomeTex {
 
     }
 }
-
+```
+# Largest 3 Number
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/78966839/196159523-9e6c0528-47af-4d0b-a010-7f434ff28e13.png">
 
 ```
+import java.util.Scanner;
 
+public class Large3Num {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 3 Number");
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+        if (A > B && A > C) {
+            System.out.println("A is Grater " + A);
+        } else if (B > C) {
+            System.out.println("B is Grater " + B);
+        } else {
+            System.out.println("C is Grater " + C);
+        }
 
+        sc.close();
 
+    }
+}
+```
 
 

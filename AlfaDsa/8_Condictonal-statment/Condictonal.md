@@ -234,5 +234,109 @@ public class Calc {
 <img width="370" alt="image" src="https://user-images.githubusercontent.com/78966839/196233333-0520992e-d4b7-476d-9f24-7edc7eebb75e.png">
 
 <img width="377" alt="image" src="https://user-images.githubusercontent.com/78966839/196233649-89d37d43-030d-47a5-8fb7-0e74f6fa15b7.png">
+---
+
+# Check Number is Positive or not
+```
+import java.util.Scanner;
+
+public class PosNog {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Number");
+        int num = sc.nextInt();
+        String type = (num >= 0) ? "Positive" : "Negative";
+        System.out.println(type);
+        sc.close();
+    }
+}
+```
+# You havea fever ifyourtemperatureis above 100 and otherwise prints You don't have a fever
+```
+public class Tempeture {
+    public static void main(String[] args) {
+        double temp = 104.3;
+        if (temp > 100) {
+            System.out.println("Feaver");
+        } else {
+            System.out.println("not Feaver");
+        }
+    }
+}
+```
+# WriteaJavaprogramtoinputweeknumber(1-7)andprintdayofweeknameusing switch case
+
+```
+import java.util.Scanner;
+
+// WriteaJavaprogramto inputweeknumber(1-7)andprintdayofweeknameusing switch case
+
+public class weekName {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the day");
+        int day = sc.nextInt();
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tusday");
+                break;
+            case 3:
+                System.out.println("wedDay");
+                break;
+            case 4:
+                System.out.println("ThuDay");
+                break;
+            case 5:
+                System.out.println("FryDay");
+                break;
+            case 6:
+                System.out.println("SutDay");
+                break;
+            case 7:
+                System.out.println("SunDay");
+                break;
+            default:
+                System.out.println("Please enter Day Between 1 to 7 , Thank You !");
+        }
+        sc.close();
+    }
+}
+```
+
+# Leap Year
+```
+
+import java.util.Scanner;
+
+/*
+ * Leap Year
+ * 1. year % 4 = 0
+ * 2. year % 100 != 0
+ * 3. year % 100 == 0 && year % 400 == 0
+ */
+
+public class LeapYear {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Year");
+        int year = sc.nextInt();
+        boolean x = year % 4 == 0;
+        boolean y = year % 100 != 0;
+        boolean z = year % 100 == 0 && year % 400 == 0;
+        if (x && (y || z)) {
+            System.out.println(year + "Leap Year");
+        } else {
+            System.out.println(year + "Not a  Leap Year");
+        }
+        sc.close();
+
+    }
+}
+
+```
+
 
 

@@ -263,3 +263,98 @@ public class contqus {
 
 <img width="860" alt="image" src="https://user-images.githubusercontent.com/78966839/196745606-60036047-a781-492e-8157-a0083e7f6de5.png">
 
+---
+
+# QUS 
+<img width="361" alt="image" src="https://user-images.githubusercontent.com/78966839/196768854-ffda0634-1038-40ab-b355-467b8d27c163.png">
+<img width="344" alt="image" src="https://user-images.githubusercontent.com/78966839/196768940-471c5d0a-4da2-4be1-978c-67ae56b9d117.png">
+
+# Solution 
+<img width="372" alt="image" src="https://user-images.githubusercontent.com/78966839/196768530-1cee14b1-cc50-4eaa-8f5c-8ac9ca10496a.png">
+<img width="360" alt="image" src="https://user-images.githubusercontent.com/78966839/196768665-151526a0-f628-44b9-b84e-be4546198222.png">
+<img width="671" alt="image" src="https://user-images.githubusercontent.com/78966839/196778958-ad2ae74e-0df9-427e-8ce2-ca77df529181.png">
+
+
+### Write a program that reads a set of integers,  and then pronts the sum of the even and odd integers.
+```
+// Write a program that reads a set of integers, 
+// and then pronts the sum of the even and odd integers.
+
+import java.util.Scanner;
+
+public class SumofEvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        int choise;
+        int sumEven = 0;
+        int sumOdd = 0;
+
+        do { // Exicute at list once
+            System.out.println("Enter a number");
+            num = sc.nextInt();
+            if (num % 2 == 0) {
+                sumEven += num;
+            } else {
+                sumOdd += num;
+            }
+            System.out.println("1 continue 2 Exict");
+            choise = sc.nextInt();
+        } while (choise == 1);
+        System.out.println("Sum Of Even Number is " + sumEven);
+        System.out.println("Sum of Odd Number is " + sumOdd);
+
+        sc.close();
+    }
+}
+```
+---
+### Factorial of a Number
+```
+import java.util.Scanner;
+
+// Write a program to find the factorialof any number entered by the user
+
+public class Fact {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Number");
+        int num = sc.nextInt();
+        int fact = 1;
+        for (int i = 1; i <= num; i++) {
+            fact *= i;
+        }
+        System.out.println("factorial of is" + fact);
+
+        sc.close();
+
+    }
+
+}
+// What is Factorial Number
+// Factorial of a positive integer (number) is the sum of multiplication of all
+// the integers smaller than that positive integer
+```
+
+# Multiplication
+
+```
+import java.util.Scanner;
+
+public class MultiTable {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter teble Number");
+        int num = sc.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + " * " + i + " = " + num * i);
+        }
+
+        sc.close();
+    }
+}
+```
+
+
+
+

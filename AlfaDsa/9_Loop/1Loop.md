@@ -133,6 +133,86 @@ public class squarePattren {
 
 # Reverse the given number
 
+<img width="754" alt="image" src="https://user-images.githubusercontent.com/78966839/196676521-b1700514-6afe-42ab-887a-7d3ce71e4bba.png">
+
+```
+public class ReverseTheNumber {
+    public static void main(String[] args) {
+        int num = 15099;
+        int reverse = 0;
+        while (num > 0) {
+            // Reverse the num get a nue number
+            int LD = num % 10;
+            reverse = (reverse * 10) + LD;
+            num = num / 10;
+        }
+        System.out.println(reverse);
+    }
+}
+```
+---
+# do-while Loop
+<img width="410" alt="image" src="https://user-images.githubusercontent.com/78966839/196683925-54fec6d4-4116-4779-9f18-b2ca9a7dbc73.png">
+
+- exicute then check condiction.
+
+## Hello world in do while loop
+
+```
+public class HelloWorldDowhile {
+    public static void main(String[] args) {
+        int counter = 1;
+        do {
+            System.out.println("Hello World !");
+            counter++;
+        } while (counter < 10);
+        System.out.println("10x time print Hello world");
+
+    }
+}
+```
+
+
+# Breake 
+
+<img width="796" alt="image" src="https://user-images.githubusercontent.com/78966839/196686606-c32fb9e3-6d36-459d-a91b-2039b9709783.png">
+
+```
+public class Break {
+    public static void main(String[] args) {
+        // Break statment is use for Breake the code
+        for (int i = 1; i < 5; i++) {
+            if (i == 3) {
+                break;
+            }
+            System.out.println(i);
+        }
+        System.out.println("I am Out from Loop");
+    }
+}
+```
+# Break qus
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/78966839/196688885-bc85d3bf-a2b0-453d-be6b-dd9042fbfd77.png">
+
+```
+import java.util.Scanner;
+
+public class BrQus {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.println("Enter a Number");
+            int num = sc.nextInt();
+            if (num % 10 == 0) {
+                break;
+            }
+            System.out.println("Your Number is " + num);
+        } while (true);
+        sc.close();
+    }
+}
+```
 
 
 

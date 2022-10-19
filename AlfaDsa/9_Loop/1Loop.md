@@ -255,13 +255,11 @@ public class contqus {
     }
 }
 ```
+---
+# Check if a number is Prime or not
+<img width="848" alt="image" src="https://user-images.githubusercontent.com/78966839/196744165-8844ab0a-5bc5-44ea-9866-c89c4e820957.png">
 
+<img width="845" alt="image" src="https://user-images.githubusercontent.com/78966839/196745393-1ebd3c9e-1d19-4d22-a5df-4bcbbf179f16.png">
 
-
-
-
-
-
-
-
+<img width="860" alt="image" src="https://user-images.githubusercontent.com/78966839/196745606-60036047-a781-492e-8157-a0083e7f6de5.png">
 

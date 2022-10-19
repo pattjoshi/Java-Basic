@@ -214,10 +214,47 @@ public class BrQus {
 }
 ```
 
+# continue Statement 
+- to skip an iteration
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/78966839/196706545-5eb49c73-6da4-4952-8e05-b2a1e78737f7.png">
+
+```
+public class Continue {
+    public static void main(String[] args) {
+        for (int i = 1; i < 5; i++) {
+            if (i == 3) {
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+}
+```
+<img width="859" alt="image" src="https://user-images.githubusercontent.com/78966839/196707616-5e881789-0acc-4944-ac9f-c98cdd9f2281.png">
 
 
+## Display all the number entered By user except multiples of 10
 
+```
+import java.util.Scanner;
 
+public class contqus {
+    public static void main(String[] args) {
+
+        do {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter a Number");
+            int num = sc.nextInt();
+            if (num % 10 == 0) {
+                continue;
+            }
+            System.out.println("Your Number is " + num);
+
+        } while (true);
+
+    }
+}
+```
 
 
 

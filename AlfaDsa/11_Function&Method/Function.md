@@ -215,6 +215,165 @@ public class BinoMial {
 ## Dry run
 <img width="712" alt="image" src="https://user-images.githubusercontent.com/78966839/197269251-1bbf17fa-a7c1-4023-abeb-dc12832bb206.png">
 
+---
+
+## Inbuilt v/s User defined Methods
+
+<img width="677" alt="image" src="https://user-images.githubusercontent.com/78966839/197337925-491e8bf8-674d-4417-b09f-5b54c29780de.png">
+
+## Function Overloading
+- Multiple fumctions with the same name but **Different parameters**.
+
+<img width="809" alt="image" src="https://user-images.githubusercontent.com/78966839/197338195-b9f361c3-b937-4a08-8274-7f67604d9598.png">
+
+### Function Overloading (using Paramente)
+
+<img width="779" alt="image" src="https://user-images.githubusercontent.com/78966839/197338406-e6325005-923e-426e-a335-8b974fe9918a.png">
+
+```
+public class FunOvrLod {
+    // Function of add 2 Number
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sum(3, 5));
+        System.out.println(sum(2, 4, 6));
+
+    }
+}
+// Function Overloading :- Same method name but diffrent paramentr
+```
+### Function Overloading (using Data Types)
+
+```
+public class intFloOvrLod {
+    // Sum of intiger
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
+    // sum of float
+    public static float sum(float a, float b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Sum of intiger sum is" + sum(4, 5));
+        System.out.println("Sum of Float sum is" + sum(3.4f, 9.4f));
+
+    }
+}
+// Over loading fumction different parameter
+```
+# Prime Number
+<img width="828" alt="image" src="https://user-images.githubusercontent.com/78966839/197342623-4f16c9f7-f2ba-434d-a928-d7329cb4ebdc.png">
+
+```
+public class Prime {
+    public static boolean prinmeNumber(int n) {
+        // corner cases
+        // 2
+        if (n == 2) {
+            return true;
+        }
+        boolean isprime = true;
+        for (int i = 2; i <= n - 1; i++) {
+            if (n % i == 0) { // compleatly deviding
+                isprime = false;
+                break;
+            }
+        }
+        return isprime;
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(prinmeNumber(22));
+
+    }
+}
+// Over loading
+// a number that is divisible only by itself and 1 (e.g. 2, 3, 5, 7, 11).
+```
+# Check Prime (Optimized)
+
+<img width="773" alt="image" src="https://user-images.githubusercontent.com/78966839/197342909-ed1c3ae7-73fb-44fa-933a-2aeb9ff0278a.png">
+
+```
+public class primeOptimize {
+
+    public static boolean isprime(int n) {
+        // Corner case 2
+        if (n == 2) {
+            return true;
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) { // corner case
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isprime(7));
+
+    }
+}
+```
+
+# Prime number in range
+<img width="849" alt="image" src="https://user-images.githubusercontent.com/78966839/197344247-e57fe23f-6205-4c15-946c-9ca08a884716.png">
+
+```
+public class RangePrime {
+
+    // Chack number is prime or not
+    public static boolean isprime(int n) { // Helping fuction
+        if (n == 2) {
+            return true;
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Print prime number in range
+    public static void primeInRange(int n) {
+        for (int i = 2; i <= n; i++) {
+            if (isprime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        primeInRange(20); // 2 to 20
+
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 

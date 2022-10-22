@@ -363,12 +363,46 @@ public class RangePrime {
     }
 }
 ```
+## Convert from Binary to Decimal
 
+<img width="775" alt="image" src="https://user-images.githubusercontent.com/78966839/197350353-7d0be7ae-c2eb-4439-8547-aa6b5fbf1fa4.png">
 
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/78966839/197350521-beef006b-f684-4a28-9317-15c234116e3e.png">
 
+- **PAPER & PAN**
+- **LOGIC**
+- **CODE**
 
+<img width="773" alt="image" src="https://user-images.githubusercontent.com/78966839/197350771-1d918e83-a4d9-4ddc-855c-87a869b364eb.png">
 
+<img width="813" alt="image" src="https://user-images.githubusercontent.com/78966839/197350886-53c9d63d-8181-48a8-b0db-68a13073d784.png">
 
+<img width="851" alt="image" src="https://user-images.githubusercontent.com/78966839/197350993-bab6ca83-00b2-4016-89e1-42f4e784a542.png">
+
+```
+public class BinaryToDec {
+    public static void binTodec(int binNum) {
+        int myNum = binNum;
+        int pow = 0;
+        int decNum = 0;
+
+        while (binNum > 0) {
+            // Last deg
+            int LD = binNum % 10;
+            decNum = decNum + (LD * (int) Math.pow(2, pow));
+            pow++;
+            // small to degite
+            binNum /= 10;
+        }
+        System.out.println("decimal of " + myNum + " " + decNum);
+    }
+
+    public static void main(String[] args) {
+        binTodec(101);
+    }
+}
+```
+---
 
 
 

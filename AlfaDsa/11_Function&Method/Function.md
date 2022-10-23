@@ -403,10 +403,62 @@ public class BinaryToDec {
 }
 ```
 ---
+# Convert from Decimal to Binary
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/78966839/197372209-81f4ddfc-cfeb-4a94-855a-53a50f9b8e98.png">
+
+<img width="775" alt="image" src="https://user-images.githubusercontent.com/78966839/197372298-de880495-a5ea-41bc-a775-8f2bc2c8e613.png">
+
+<img width="783" alt="image" src="https://user-images.githubusercontent.com/78966839/197372311-ba8c1484-8ffa-4551-b4bd-1c6c918a35b7.png">
+
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/78966839/197372433-cb221b32-2e45-4c68-8466-bd952e2ca0be.png">
 
 
+- function create decToBin
+- variable decleare : Pow,binary=0; myNum = n;
+- loop
+- while (n>0)
+- reminder
+- binary formula = binary = binary + (rem * (int) Math.pow(10, pow));
+- pow ++;
+- small the number n /= 2;
+- sout
 
+```
+public class DecToBin {
+    public static void decToBinary(int n) {
+        int myNum = n;
+        int pow = 0;
+        int binary = 0;
+        while (n > 0) {
+            int rem = n % 2;
+            binary = binary + (rem * (int) Math.pow(10, pow));
+            pow++;
+            n /= 2;
+        }
+        System.out.println("Binary of " + myNum + " is = " + binary);
+    }
 
+    public static void main(String[] args) {
+        decToBinary(5);
+    }
+}
+
+// function create decToBin
+// variable decleare : Pow,binary=0; myNum = n;
+// loop
+// while (n>0)
+// reminder
+// binary formula = binary = binary + (rem * (int) Math.pow(10, pow));
+// pow ++;
+// small the number n /= 2;
+// sout
+```
+## Method Scope
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/78966839/197375728-f0689f4e-72d2-4383-8b43-829fb52c4307.png">
+
+# Block Scope
+
+<img width="939" alt="image" src="https://user-images.githubusercontent.com/78966839/197375834-2036afc5-26cd-4038-a5ac-8ead08a28e60.png">
 
 
 

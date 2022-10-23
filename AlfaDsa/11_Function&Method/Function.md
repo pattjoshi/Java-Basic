@@ -460,6 +460,168 @@ public class DecToBin {
 
 <img width="939" alt="image" src="https://user-images.githubusercontent.com/78966839/197375834-2036afc5-26cd-4038-a5ac-8ead08a28e60.png">
 
+# qus
+<img width="360" alt="image" src="https://user-images.githubusercontent.com/78966839/197392195-324e0ed0-e86f-4203-a703-ba332a61066c.png">
+
+# Solution
+<img width="366" alt="image" src="https://user-images.githubusercontent.com/78966839/197392270-7a982cfb-f9cb-43e1-9344-65286b3e99de.png">
+
+<img width="363" alt="image" src="https://user-images.githubusercontent.com/78966839/197392284-4df4d57e-cd23-45c6-bc2f-3bd63411d7e6.png">
+<img width="356" alt="image" src="https://user-images.githubusercontent.com/78966839/197392310-856da280-b182-4bb9-8c7a-382ed544d9aa.png">
+
+---
+## Average of 3 Number
+- Stape 1:- Enter 3 num in main function
+- Stape 1:- create function averageOf3Num
+- Stape 1:- in averageOf3Num function add 3 num and dev by 3 and return
+- Stape 1:- Function calll in main method
+
+```
+import java.util.Scanner;
+
+public class AvgOf3num {
+
+    // Main Function
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int x = sc.nextInt();
+        System.out.println("Enter 2st Number");
+        int y = sc.nextInt();
+        System.out.println("Enter 3st Number");
+        int z = sc.nextInt();
+        System.out.println("The average of 3 Number is" + averageOf3Num(x, y, z));
+
+    }
+
+    // Average of 3 functioin
+    public static int averageOf3Num(int x, int y, int z) {
+        return (x + y + z) / 3;
+
+    }
+}
+
+// Stape 1:- Enter 3 num in main function
+// Stape 1:- create function averageOf3Num
+// Stape 1:- in averageOf3Num function add 3 num and dev by 3 and return
+// Stape 1:- Function calll in main method
+```
+---
+
+### Write a method named isEven that accept sanintargument.The method should return true if thear gument iseven,or false otherwise.Also write a program to test yourmethod.
+
+```
+import java.util.Scanner;
+
+public class even {
+    public static boolean isEven(int n) {
+        if (n % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        System.out.println("Enter a Number");
+        num = sc.nextInt();
+        if (isEven(num)) { // Function call
+            System.out.println("Even Number");
+        } else {
+            System.out.println("Odd Number");
+        }
+        sc.close();
+
+    }
+}
+```
+---
+## Writea Javaprogram to check ifanumber is apalindromeinJava?
+- **if original and the reverse of number is qqual means number is palimdrome.**
+```
+import java.util.Scanner;
+
+public class PalimDrum {
+    // PalimDrum Number
+    public static boolean isPalimDrum(int num) {
+        int palimdrum = num;// copied number into variable
+        int reverse = 0;
+        while (palimdrum != 0) {
+            int reminder = palimdrum % 10;
+            reverse = reverse * 10 + reminder;
+            palimdrum /= 10;
+        }
+        // if original and the reverse of number is qqual means
+        // number is palimdrome
+        if (num == reverse) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Plimdrum;
+        System.out.println("Enter a Number");
+        Plimdrum = sc.nextInt();
+        if (isPalimDrum(Plimdrum)) {
+            System.out.println(Plimdrum + " Palimdrum Number");
+        } else {
+            System.out.println(Plimdrum + " Not a palimdrun number");
+        }
+        sc.close();
+
+    }
+}
+
+/*
+ * Writea Javaprogram to check ifanumber is apalindromeinJava?(121isapalindrome,
+ * 321 is not)
+ */
+
+// Stape 1:- Create a function Plimdrum
+// Stape 2:- variabe decleare
+// Stape 3:- int reminder, palim,reverse,palimdrun
+// Stape 1:- get reminder %10
+// Stape 1:- revrse = reverse *10 + reminder
+// Stape 1:- Small the number ; palimdrum = palimdrum /10;
+// Stape 1:- chack num == reverse
+// Stape 1:- call in main function
+
+/*
+ * A number is call edapal indromeifthenumberisequaltothereverseofanumbere.g.,
+ * 121isapalindromebecausethereverseof121is121itself.Ontheotherhand,
+ * 321isnotapalindrome because the reverse of 321 is 123, which is not equal to
+ * 321
+ */
+```
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

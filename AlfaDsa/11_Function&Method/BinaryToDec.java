@@ -12,7 +12,7 @@ public class BinaryToDec {
             // small to degite
             binNum /= 10;
         }
-        System.out.println("decimal of " + myNum + " " + decNum);
+        System.out.println("decimal of " + myNum + "=" + decNum);
     }
 
     public static void main(String[] args) {

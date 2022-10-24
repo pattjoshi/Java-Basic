@@ -131,6 +131,34 @@ public class floyd_trang {
 - **Dry run in copy**
 ---
 
+# o_1 Trangle
+<img width="724" alt="image" src="https://user-images.githubusercontent.com/78966839/197579302-ea07a4c4-9a69-4e3e-b2fa-2cb6f163c59f.png">
+
+<img width="736" alt="image" src="https://user-images.githubusercontent.com/78966839/197580849-9a337821-f428-454a-a01c-e358b180453f.png">
+
+```
+public class Trangle_0_1 {
+    public static void zero_one_trangle(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {// inner col j
+                // cell-no (i+j)
+                if ((i + j) % 2 == 0) {// even 1
+                    System.out.print("1 ");
+                } else {
+                    System.out.print("0 "); // odd 0
+                }
+            }
+            System.out.println();// Next line
+        }
+    }
+
+    public static void main(String[] args) {
+        zero_one_trangle(5);
+
+    }
+}
+```
+---
 
 
 

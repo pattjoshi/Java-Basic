@@ -159,6 +159,181 @@ public class Trangle_0_1 {
 }
 ```
 ---
+# BUTTERFLY PATTERN
+- Break the pattren, It is a mirror image
+- 
+
+<img width="805" alt="image" src="https://user-images.githubusercontent.com/78966839/197785297-1f8b31e9-b5ee-46fb-b302-599b288f779a.png">
+
+<img width="773" alt="image" src="https://user-images.githubusercontent.com/78966839/197785579-636df266-b83c-4349-a7c7-899a292a3b65.png">
+
+<img width="803" alt="image" src="https://user-images.githubusercontent.com/78966839/197786253-e2ec286c-99e2-43c1-a838-c84774f3aca3.png">
+
+<img width="738" alt="image" src="https://user-images.githubusercontent.com/78966839/197790886-514476b9-8c17-46c6-9777-d450fc8ca3ec.png">
+
+```
+
+public class ButterFly {
+    public static void Butter_fly(int n) {
+        // 1st-half
+        for (int i = 1; i <= n; i++) {// Outer
+            // star-j
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            // space -2 * (n - i)
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+            }
+            // star -i
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // 2nd Half
+        for (int i = n; i >= 1; i--) {
+            // star-i
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            // space -2 * (n - i)
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+            }
+            // star -i
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+    }
+
+    public static void main(String[] args) {
+        Butter_fly(4);
+    }
+
+}
+```
+
+# Solid RumBus
+<img width="724" alt="image" src="https://user-images.githubusercontent.com/78966839/197750936-48403b50-e3ec-499a-a687-dc72158b37c2.png">
+
+```
+public class Solidrhumbus {
+    public static void solid_rhomBus(int n) {
+        // Outer
+        for (int i = 1; i <= n; i++) {
+            // space col (n - i)
+            for (int j = 1; j <= (n - i); j++) { // Inner
+                System.out.print(" ");
+            }
+            // Star
+            for (int j = 1; j <= n; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        solid_rhomBus(5);
+    }
+}
+```
+## Holo Rhumbus pattren
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/197759160-d752a35f-bf41-4f27-8726-aecdda9fdf67.png">
+
+```
+public class HoloRhumbus {
+    public static void holp_rhumbush(int n) {
+        for (int i = 1; i <= n; i++) {
+            // space (n-i)
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            // Star Holo rhumbush logic- star
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        holp_rhumbush(5);
+
+    }
+
+}
+```
+---
+# Dimand Pttren
+
+<img width="745" alt="image" src="https://user-images.githubusercontent.com/78966839/197779270-80aa089f-cec7-4ccd-b46b-646e184caaf9.png">
+
+```
+public class Dimand {
+    public static void dimand_pattren(int n) {
+        // 1-half
+        for (int i = 1; i <= n; i++) { // 1 to n
+            // space (n-1)
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            // 2 * (i + 1) Odd Number
+            for (int j = n; j <= 2 * (i + 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // 2=half
+        for (int i = n; i >= 1; i--) {// n to 1
+            // space (n-1)
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            // start Odd Number 2*(i+1)
+            for (int j = n; j <= 2 * (i + 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        dimand_pattren(4);
+
+    }
+}
+```
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

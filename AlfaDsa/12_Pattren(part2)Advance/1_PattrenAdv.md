@@ -313,11 +313,37 @@ public class Dimand {
 }
 ```
 ---
+# NUMBER PYRAMID
 
+<img width="605" alt="image" src="https://user-images.githubusercontent.com/78966839/197793807-b649e8ff-f40c-46f8-a0e5-70a4392f66b3.png">
 
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/78966839/197795453-87d892dd-17f6-4ba5-8215-96b1903f2190.png">
 
+```
+public class Numberpyramid {
+    public static void number_pyramid(int n) {
+        for (int i = 1; i <= n; i++) {
+            // Space (n-i)
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            // Number i
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
 
+    public static void main(String[] args) {
+        number_pyramid(5);
 
+    }
+}
+
+```
+---
+# PALINDROMIC PATTREN WITH NUMBER
 
 
 

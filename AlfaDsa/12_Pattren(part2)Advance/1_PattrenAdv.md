@@ -345,26 +345,43 @@ public class Numberpyramid {
 ---
 # PALINDROMIC PATTREN WITH NUMBER
 
+- **PALINDROM WORD**
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/78966839/197818426-114a74e0-5fb3-4b7c-9976-21620712c8d4.png">
 
 
+<img width="746" alt="image" src="https://user-images.githubusercontent.com/78966839/197819790-203d0a56-e450-4b16-bbce-3d035cc91b92.png">
 
+<img width="731" alt="image" src="https://user-images.githubusercontent.com/78966839/197821484-5931008b-349e-4b09-8a84-e0722fe00028.png">
 
+```
+public class palandromicNumber {
+    public static void PalanDromic_Number(int n) {
+        // Outer loop
+        for (int i = 1; i <= n; i++) {
+            // Space
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            // decending
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
+            // accending
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
 
+        }
+    }
 
+    public static void main(String[] args) {
+        PalanDromic_Number(5);
 
+    }
+}
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## DRY RUN
+<img width="673" alt="image" src="https://user-images.githubusercontent.com/78966839/197832413-9baff0b6-bb25-4e7a-a1f3-7d7365b32e52.png">
 

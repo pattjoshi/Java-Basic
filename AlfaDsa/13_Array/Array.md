@@ -189,6 +189,69 @@ public class Largest {
     }
 }
 ```
+---
+# Binary Search
+- **Prerequisite- Sorted arrays**
+
+<img width="750" alt="image" src="https://user-images.githubusercontent.com/78966839/198100594-134665a5-7959-4332-be45-8bcaa3af76aa.png">
+
+<img width="758" alt="image" src="https://user-images.githubusercontent.com/78966839/198100918-15285b69-6447-4404-92dc-664dfd4b9267.png">
+
+<img width="782" alt="image" src="https://user-images.githubusercontent.com/78966839/198101851-3a179e45-0fda-44c5-a2df-03c6826909ab.png">
+
+### Binary search Summery
+- **mid < key 2nd half**
+- **mid > key 1nd half**
+
+<img width="747" alt="image" src="https://user-images.githubusercontent.com/78966839/198106420-fd34b14d-2730-4672-aa55-ec100f192412.png">
+
+### Pseudo code of Binary search
+
+<img width="797" alt="image" src="https://user-images.githubusercontent.com/78966839/198107333-eeae7fc9-243d-4eae-b557-170a2a510d48.png">
+
+### Binary search time complacaty
+- **Binary search time complacaty is less**
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/78966839/198110907-c5298a7e-9f41-48f0-863a-9cf00d46be1e.png">
+
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/78966839/198111177-976c9ac6-ed1a-4e31-bc5a-41156c544a4a.png">
+
+
+```
+public class BinarySearch {
+    public static int get_largest_Bs(int number[], int key) {
+        int start = 0, end = number.length - 1;
+
+        while (start <= end) {
+            int mid = (start + end) / 2;
+
+            // comparisions
+            if (number[mid] == key) {// found
+                return mid;
+            }
+
+            if (number[mid] < key) { // right
+                start = mid + 1;
+            } else { // left 1st haf
+                end = mid - 1;
+            }
+
+        }
+        return -1;
+
+    }
+
+    public static void main(String[] args) {
+        int number[] = { 2, 4, 6, 8, 10, 14 };// must be sorting array
+        int key = 14;
+        System.out.println(get_largest_Bs(number, key));
+    }
+}
+```
+
+---
+
+
+
 
 
 

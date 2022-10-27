@@ -247,8 +247,131 @@ public class BinarySearch {
     }
 }
 ```
+---
+
+# Reverse an Array
+<img width="658" alt="image" src="https://user-images.githubusercontent.com/78966839/198340305-a5597ea5-fd3c-47f0-8894-e9694f3786c7.png">
+
+<img width="867" alt="image" src="https://user-images.githubusercontent.com/78966839/198341072-92e66179-c960-418b-834c-d595d58769a4.png">
+#### swap
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/78966839/198350320-6e7fdbd6-c1b1-45ed-b0f9-58bb4da3e3fa.png">
+
+```
+public class Reverse {
+    // reverse an array
+    public static void reverse(int number[]) {
+        int start = 0;
+        int last = number.length - 1;
+        while (start < last) {
+            // swap
+            int temp = number[last];
+            number[last] = number[start];
+            number[start] = temp;
+
+            start++; // increase 1 index
+            last--; // decrease 2 index
+
+        }
+    }
+
+    public static void main(String[] args) {
+        int number[] = { 1, 2, 4, 6, 12, 23, 45 };
+        reverse(number);// function call
+        // Prints the number
+        for (int i = 0; i < number.length; i++) {
+            System.out.print(number[i] + " ");
+        }
+        System.out.println();
+
+    }
+}
+```
+# Pairs in array
+<img width="699" alt="image" src="https://user-images.githubusercontent.com/78966839/198355140-3932249b-b219-405f-b00c-7a938c8e07e0.png">
+
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/78966839/198355260-6ac7fa5d-0875-451d-8589-61d03d75b788.png">
+
+### Total no of part
+<img width="323" alt="image" src="https://user-images.githubusercontent.com/78966839/198359749-c9d65e75-0a93-4d35-a9a8-a50543336450.png">
+
+```
+public class Pairs {
+    public static void pairs_pattren(int number[]) {
+        // Outer layer
+        int tp = 0;
+        for (int i = 0; i < number.length; i++) {
+            int curr = number[i]; // 2,4,6,8,10
+            for (int j = i + 1; j < number.length; j++) {
+                System.out.print("(" + curr + "," + number[j] + ")");
+                tp++;
+            }
+            System.out.println();
+        }
+        System.out.println("Total Pair is " + tp);
+    }
+
+    public static void main(String[] args) {
+        int number[] = { 2, 4, 6, 8, 10 };
+        pairs_pattren(number);
+       
+
+    }
+}
+```
+<img width="489" alt="image" src="https://user-images.githubusercontent.com/78966839/198360236-fce021c9-b2b8-4e7f-993b-47a54467106a.png">
 
 ---
+# SubArray
+- **a continous part of array**
+<img width="698" alt="image" src="https://user-images.githubusercontent.com/78966839/198367657-5476e0cf-c918-4948-bcac-a7bce4d22c59.png">
+
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/78966839/198367481-4ee3487c-d4a7-4c9b-9e24-03ac7febfd6c.png">
+
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/78966839/198369278-d65a1a2a-5689-4b1b-8c9c-536affa26fcf.png">
+<img width="789" alt="image" src="https://user-images.githubusercontent.com/78966839/198372545-de4c006a-cca6-436a-a54c-cf412170f3a4.png">
+
+```
+public class SubArray {
+    public static void sub_array(int number[]) {
+        for (int i = 0; i < number.length; i++) { // start
+            int start = i;
+            for (int j = i; j < number.length; j++) { // end (single element)
+                int end = j;
+                for (int k = start; k <= end; k++) { // print
+                    System.out.print(number[k] + " "); // subarray
+                }
+                System.out.println();
+
+            }
+            System.out.println();
+        }
+
+    }
+
+    public static void main(String[] args) {
+        int number[] = { 2, 4, 6, 8, 10 };
+        sub_array(number);
+
+    }
+}
+```
+
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/78966839/198374339-191537d9-efa1-437d-b346-691aa6263d59.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

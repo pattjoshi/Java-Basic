@@ -450,6 +450,52 @@ public class SubArrayPreFixArr {
 <img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/198640890-503f4f84-e201-4ee5-8a09-687fa40ee849.png">
 
 ---
+# Kadane's
+
+- in an array their is small +ve  +  Big -ve value add and final value is -ve **consider that in 0**.
+- Only add if the num is +ve.
+- **-ve = 0**
+
+<img width="771" alt="image" src="https://user-images.githubusercontent.com/78966839/198683029-22233aa7-f77b-48ec-a73d-4fa25ad00f3c.png">
+
+<img width="841" alt="image" src="https://user-images.githubusercontent.com/78966839/198684822-c8e3d6a9-6fbb-4e7e-8121-7611a1903214.png">
+
+```
+public class KadanesSubarray {
+    public static void kadanes(int number[]) {
+        int cs = 0;
+        int ms = 0;
+        for (int i = 1; i < number.length; i++) {
+            cs = cs + number[i];
+            if (cs < 0) {
+                cs = 0;
+            }
+            ms = Math.max(cs, ms);
+        }
+        System.out.println("Our max subarray is : " + ms);
+    }
+
+    public static void main(String[] args) {
+        int number[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
+        kadanes(number);
+
+    }
+}
+// Tc o(n)
+```
+
+- **T.c o(n) good**
+<img width="709" alt="image" src="https://user-images.githubusercontent.com/78966839/198690771-d168b5b2-12d6-459f-8a69-d4ed5e4316cc.png">
+
+---
+
+
+
+
+
+
+
+
 
 
 

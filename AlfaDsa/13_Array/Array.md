@@ -358,9 +358,44 @@ public class SubArray {
 
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/78966839/198374339-191537d9-efa1-437d-b346-691aa6263d59.png">
 
+---
+#  Broute forse apptoch of max subarray
 
+<img width="732" alt="image" src="https://user-images.githubusercontent.com/78966839/198505868-ef97925d-d5a0-42d5-a430-d443bca752f2.png">
+```
+public class MaxSubArrayBrotFource {
+    // Broute forse apptoch of max subarray
+    public static void max_Subarray(int number[]) {
+        int currsum = 0;
+        int maxSum = Integer.MIN_VALUE;
+        for (int i = 0; i < number.length; i++) {
+            for (int j = i; j < number.length; j++) {
+                currsum = 0;
+                for (int k = i; k <= j; k++) {// print
+                    // subarray sum
+                    currsum += number[k];
+                }
+                System.out.print(currsum + ",");
+                if (maxSum < currsum) {
+                    maxSum = currsum;
+                }
 
+            }
 
+        }
+        System.out.println("max sum is " + maxSum);
+
+    }
+
+    public static void main(String[] args) {
+        int number[] = { 1, -2, 6, -1, 3 };
+        max_Subarray(number);
+
+    }
+}
+```
+- **time comp is bad n3**
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/198507553-113d1453-b2d4-49ed-8d3c-6c4d9b83d6ef.png">
 
 
 

@@ -362,6 +362,10 @@ public class SubArray {
 #  Broute forse apptoch of max subarray
 
 <img width="732" alt="image" src="https://user-images.githubusercontent.com/78966839/198505868-ef97925d-d5a0-42d5-a430-d443bca752f2.png">
+
+<img width="636" alt="image" src="https://user-images.githubusercontent.com/78966839/198508108-60c8a497-b398-4f6f-99f3-837a8bf72e7c.png">
+
+
 ```
 public class MaxSubArrayBrotFource {
     // Broute forse apptoch of max subarray
@@ -394,6 +398,8 @@ public class MaxSubArrayBrotFource {
     }
 }
 ```
+
+
 - **time comp is bad n3**
 <img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/198507553-113d1453-b2d4-49ed-8d3c-6c4d9b83d6ef.png">
 

@@ -399,14 +399,57 @@ public class MaxSubArrayBrotFource {
 }
 ```
 
-
 - **time comp is bad n3**
 <img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/198507553-113d1453-b2d4-49ed-8d3c-6c4d9b83d6ef.png">
+---
 
+# Max Subarray sum (PREFIX ARRAY)
 
+- **new array**
+- **ith element of sum**
 
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/198590319-09076ad8-7357-47db-91fe-afd9c238632c.png">
 
+<img width="699" alt="image" src="https://user-images.githubusercontent.com/78966839/198597547-4529970f-9a01-4e84-b486-6fd66cde6541.png">
 
+<img width="715" alt="image" src="https://user-images.githubusercontent.com/78966839/198598669-b70a0bd2-fb17-497b-9e49-27561bc736d4.png">
+
+```
+public class SubArrayPreFixArr {
+    public static void Prifix_subArray(int number[]) {
+        int currsum = 0;
+        int maxSum = Integer.MIN_VALUE; // -infiniti
+        // create prifix array
+        int prifix[] = new int[number.length];
+        prifix[0] = number[0]; // copy
+        // calculate prifix array
+        for (int i = 1; i < prifix.length; i++) {
+            prifix[i] = prifix[i - 1] + number[i]; // Privious sum + current sum
+        }
+        for (int i = 0; i < number.length; i++) {
+
+            for (int j = i; j < number.length; j++) {
+                currsum = i == 0 ? prifix[j] : prifix[j] - prifix[i - 1];
+            }
+            if (maxSum <= currsum) {
+                maxSum = currsum;
+            }
+
+        }
+        System.out.println(maxSum);
+    }
+
+    public static void main(String[] args) {
+        int number[] = { 1, -2, 6, -1, 3 };
+        Prifix_subArray(number);
+    }
+}
+```
+#### Time and spance comp
+- **In Prifix array TC is 0(n2)**
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/198640890-503f4f84-e201-4ee5-8a09-687fa40ee849.png">
+
+---
 
 
 

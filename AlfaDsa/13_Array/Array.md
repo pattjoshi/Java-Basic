@@ -488,22 +488,47 @@ public class KadanesSubarray {
 <img width="709" alt="image" src="https://user-images.githubusercontent.com/78966839/198690771-d168b5b2-12d6-459f-8a69-d4ed5e4316cc.png">
 
 ---
+# Trap rain water
+- Width of each bar is 1.
 
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/78966839/198834799-290db7f6-3b8a-4cf9-b95b-a4301464507e.png">
 
+- Thinking approch
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/78966839/198835052-53dc6369-71c5-4bc2-b286-bd669c044fd7.png">
 
+<img width="817" alt="image" src="https://user-images.githubusercontent.com/78966839/198835345-24d3a223-a6fc-4b3e-a9ca-c920a0edba3d.png">
 
+### How to calculate water level?
+- consider some point
+- **min no of bar >2**
 
+<img width="788" alt="image" src="https://user-images.githubusercontent.com/78966839/198836108-9d2914de-44f2-42f0-845d-881b7f61eea1.png">
 
+- **Ascinding/des no water is trap**
 
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/78966839/198836197-9e1d8e5c-7b82-4efe-bf0a-62476af4783f.png">
 
+- **min of (max left, mex right) **
+<img width="854" alt="image" src="https://user-images.githubusercontent.com/78966839/198836520-584977d1-079c-4d5d-ba60-e578de20302e.png">
 
+- **Code logic**
 
+<img width="786" alt="image" src="https://user-images.githubusercontent.com/78966839/198836810-ccf53475-e7e7-4755-b879-721e0ae2720a.png">
 
+#### How to calculate maxleft boundary, maxRight Boundary
 
+- **Auxiliary array:- Helper array**
 
+- **Left Max**
 
+<img width="824" alt="image" src="https://user-images.githubusercontent.com/78966839/198837213-3034d931-0d66-4560-8cf9-5601b68d43dc.png">
 
+- **Right max**
+<img width="871" alt="image" src="https://user-images.githubusercontent.com/78966839/198837316-3e17bd0d-5efb-4f78-81ca-41afe02faafd.png">
 
+- **For each bar we have to do**
+
+<img width="857" alt="image" src="https://user-images.githubusercontent.com/78966839/198837371-562bda59-3dcb-4b12-a329-1a75cee80111.png">
 
 
 

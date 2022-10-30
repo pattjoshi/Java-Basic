@@ -1,6 +1,6 @@
 public class SubArray {
     public static void sub_array(int number[]) {
-        int sum = 0;
+
         for (int i = 0; i < number.length; i++) { // start
             int start = i;
             for (int j = i; j < number.length; j++) { // end (single element)

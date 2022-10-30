@@ -532,6 +532,8 @@ public class KadanesSubarray {
 
 # Trap rain water Code
 
+- TC :- 0(n)
+
 ```
 public class TrappingRainWater {
     public static int trap_Water(int height[]) {

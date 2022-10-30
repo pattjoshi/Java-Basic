@@ -508,7 +508,7 @@ public class KadanesSubarray {
 
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/78966839/198836197-9e1d8e5c-7b82-4efe-bf0a-62476af4783f.png">
 
-- **min of (max left, mex right) **
+- **min of (max left, mex right)**
 <img width="854" alt="image" src="https://user-images.githubusercontent.com/78966839/198836520-584977d1-079c-4d5d-ba60-e578de20302e.png">
 
 - **Code logic**
@@ -529,6 +529,62 @@ public class KadanesSubarray {
 - **For each bar we have to do**
 
 <img width="857" alt="image" src="https://user-images.githubusercontent.com/78966839/198837371-562bda59-3dcb-4b12-a329-1a75cee80111.png">
+
+# Trap rain water Code
+
+```
+public class TrappingRainWater {
+    public static int trap_Water(int height[]) {
+        int n = height.length;
+        // Calculate left max boundary - array
+        int leftmax[] = new int[n];// left max size is equal to height
+        leftmax[0] = height[0];
+
+        for (int i = 1; i < n; i++) { // calculate start
+            leftmax[i] = Math.max(height[i], leftmax[i - 1]);
+            // current height compair to leftMax[i-1]
+        }
+
+        // calculate right max boundary - array
+        int rightMax[] = new int[n];
+
+        rightMax[n - 1] = height[n - 1]; // claculate from last so height.length-1
+
+        for (int i = n - 2; i >= 0; i--) {
+            rightMax[i] = Math.max(height[i], rightMax[i + 1]);
+            // i+1 becouse stating from last , compair to right max i + 1
+        }
+
+        // loop
+        int trappedWater = 0;
+        for (int i = 0; i < n; i++) {
+            // waterLevel = min(leftmax bound, right max bound)
+            int waterLevel = Math.min(leftmax[i], rightMax[i]);
+            // trapped water = waterLevel - height[i]
+            trappedWater += waterLevel - height[i];
+        }
+        return trappedWater;
+    }
+
+    public static void main(String[] args) {
+        int height[] = { 4, 2, 0, 6, 3, 2, 5 };
+
+        System.out.println("Trap water capt inside bar " + trap_Water(height));
+
+    }
+
+}
+
+// H.W := 1.Dry run,2. wtite code 5 tme
+```
+
+---
+
+
+
+
+
+
 
 
 

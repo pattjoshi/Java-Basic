@@ -581,12 +581,59 @@ public class TrappingRainWater {
 ```
 
 ---
-# Buy stock
+# Buy & Sell Stocks (T.c 0(n))
+
+- 2 variable , Buyrate = +inf; maxProfix =0
+- loop 0 to n
+- case 1 :- Buyrate > price[i]
+- int profid = price[i] - buyratel
+- maxProfix = min(maxProfid,profid)
+- case 2
+- Buyrate = price[i]
+
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/78966839/199320346-b180c875-4f64-47f4-a07b-4ce5716b6655.png">
+
+<img width="747" alt="image" src="https://user-images.githubusercontent.com/78966839/199320647-4915d193-7c5c-4b90-ad67-3c29761f45fe.png">
+
+- maxPeice
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/78966839/199321130-0f58e79d-b859-4f17-a216-c428cf09cb1c.png">
+
+<img width="782" alt="image" src="https://user-images.githubusercontent.com/78966839/199321744-40c825c2-97ba-4e18-aba8-d8109852c30c.png">
 
 
+```
+public class BuyAsellStock {
+    public static int buyStuck(int price[]) {
+        // profit = buyPrice - shel price
+        int buyPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for (int i = 0; i < price.length; i++) {
+            if (buyPrice < price[i]) { // profit
+                int profit = price[i] - buyPrice; // today's profit
+                maxProfit = Math.max(maxProfit, profit);
+                // mix(golbal-profit,to day profit)
+            } else {
+                buyPrice = price[i];
+            }
+        }
+        return maxProfit;
+    }
 
+    public static void main(String[] args) {
+        int prices[] = { 7, 1, 5, 3, 6, 4 };
+        System.out.println(buyStuck(prices));
 
+    }
+}
 
+// 2 variable , Buyrate = +inf; maxProfix =0
+// loop 0 to n
+// case 1 :- Buyrate > price[i]
+// int profid = price[i] - buyratel
+// maxProfix = min(maxProfid,profid)
+// case 2
+// Buyrate = price[i]
+```
 
 
 

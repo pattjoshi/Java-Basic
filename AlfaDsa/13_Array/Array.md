@@ -650,6 +650,100 @@ public class BuyAsellStock {
 <img width="387" alt="image" src="https://user-images.githubusercontent.com/78966839/199478224-3e9c311c-70d5-4864-b66f-13ec4761acac.png">
 <img width="388" alt="image" src="https://user-images.githubusercontent.com/78966839/199478304-2f24e7ad-8d69-4a3d-a6ac-8e2bab144314.png">
 
+---
+
+# My solution
+
+# Contains Duplicate(Brote force)
+
+#### Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+```
+public class ContainsDuplicate {
+    // Brote force
+    public static boolean cont_Duplicate(int nums[]) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] == nums[j]) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int nums[] = { 1, 2, 3, 4 };
+        System.out.println(cont_Duplicate(nums));
+
+    }
+}
+
+```
+# Contains Duplicate(Optimal)  HashSet
+
+#### Basec over viev of Hashset
+
+- **A HashSet is a collection of items where every item is unique, and it is found in the java.util package:**
+- unique value return true else false
+- Time comp is minimum.
+
+## [Hash set Doc ](https://www.w3schools.com/java/java_hashset.asp)
+
+<img width="333" alt="image" src="https://user-images.githubusercontent.com/78966839/199484166-b92bb1dd-bc36-479a-907f-93e05270e313.png">
+
+---
+
+
+```
+import java.util.HashSet;
+
+public class containsBuplicateHashSet {
+    public static boolean HashSets(int nums[]) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (set.contains(nums[i])) {
+                return true;
+            } else {
+                set.add(nums[i]);
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int nums[] = { 1, 2, 3, 4 };
+        System.out.println(HashSets(nums));
+    }
+}
+```
+
+----
+
+# [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+
+### There is an integer array nums sorted in ascending order (with distinct values).Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.You must write an algorithm with O(log n) runtime complexity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

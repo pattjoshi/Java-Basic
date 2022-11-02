@@ -585,9 +585,9 @@ public class TrappingRainWater {
 
 - 2 variable , Buyrate = +inf; maxProfix =0
 - loop 0 to n
-- case 1 :- Buyrate > price[i]
+- case 1 :- Buyrate < price[i]
 - int profid = price[i] - buyratel
-- maxProfix = min(maxProfid,profid)
+- maxProfix = max(maxProfid,profid)
 - case 2
 - Buyrate = price[i]
 
@@ -628,9 +628,9 @@ public class BuyAsellStock {
 
 // 2 variable , Buyrate = +inf; maxProfix =0
 // loop 0 to n
-// case 1 :- Buyrate > price[i]
+// case 1 :- Buyrate < price[i]
 // int profid = price[i] - buyratel
-// maxProfix = min(maxProfid,profid)
+// maxProfix = max(maxProfid,profid)
 // case 2
 // Buyrate = price[i]
 ```

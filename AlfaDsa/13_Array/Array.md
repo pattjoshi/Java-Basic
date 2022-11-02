@@ -634,6 +634,23 @@ public class BuyAsellStock {
 // case 2
 // Buyrate = price[i]
 ```
+# Array Assigment
+
+<img width="354" alt="image" src="https://user-images.githubusercontent.com/78966839/199476620-8315f897-48b5-43a0-a785-c6e254e7e1c9.png">
+<img width="368" alt="image" src="https://user-images.githubusercontent.com/78966839/199476757-a707034d-e2be-4790-b85b-554ea79be339.png">
+<img width="342" alt="image" src="https://user-images.githubusercontent.com/78966839/199477033-8db82671-4efa-44c9-9ff8-100e488285c2.png">
+<img width="354" alt="image" src="https://user-images.githubusercontent.com/78966839/199477134-fe401dc0-30d4-4bd0-9ac9-e58c79bcd489.png">
+
+---
+# Array Solution
+<img width="389" alt="image" src="https://user-images.githubusercontent.com/78966839/199477747-eef3e3f1-6518-4558-a9db-1e622d19280b.png">
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/78966839/199477888-ae21a638-6759-4e57-bde7-048ba71c39ba.png">
+<img width="391" alt="image" src="https://user-images.githubusercontent.com/78966839/199477981-2d461569-ceed-4d95-a04e-a8fba924bd60.png">
+<img width="397" alt="image" src="https://user-images.githubusercontent.com/78966839/199478112-d4de5ea8-94c2-42c4-a8a4-37c2b46c9031.png">
+<img width="387" alt="image" src="https://user-images.githubusercontent.com/78966839/199478224-3e9c311c-70d5-4864-b66f-13ec4761acac.png">
+<img width="388" alt="image" src="https://user-images.githubusercontent.com/78966839/199478304-2f24e7ad-8d69-4a3d-a6ac-8e2bab144314.png">
+
+
 
 
 

@@ -12,6 +12,8 @@
 
 # Bubble sort
 
+- ***to array_length - 1 position and compare the element with the next one. * Element is swapped with the next element if the next element is smaller**
+
 <img width="705" alt="image" src="https://user-images.githubusercontent.com/78966839/199566628-0a07daf8-8bad-4990-b78d-e5e03ff424da.png">
 
 # Bubble sort Idea

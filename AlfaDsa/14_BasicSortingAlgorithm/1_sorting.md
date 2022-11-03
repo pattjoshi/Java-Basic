@@ -208,13 +208,67 @@ public class inbuildSort {
     }
 }
 ```
+# Counting Sort:-
+- **Based on keys between a specific range**
 
+<img width="702" alt="image" src="https://user-images.githubusercontent.com/78966839/199768816-88ce5beb-0e13-4569-a6be-8313fc3ce5bc.png">
 
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/78966839/199771098-de5b4d83-6816-4eec-a04f-35388124741a.png">
 
+<img width="661" alt="image" src="https://user-images.githubusercontent.com/78966839/199771810-403818e6-9170-44fa-ab02-8ba38b8ff035.png">
 
+```
+public class CountingSort {
+    public static void conunting_sort(int arr[]) {
 
+        int largest = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            largest = Math.max(largest, arr[i]);
+        }
 
+        int count[] = new int[largest + 1];
+        for (int i = 0; i < arr.length; i++) {
+            count[arr[i]]++;
+        }
+        // sorting
+        int j = 0;
+        for (int i = 0; i < count.length; i++) {
+            while (count[i] > 0) {
+                arr[j] = i;
+                j++;
+                count[i]--;
+            }
+        }
+    }
 
+    public static void PrinArr(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 4, 1, 3, 2, 4, 3, 7 };
+        conunting_sort(arr);
+        PrinArr(arr); // 1 1 2 3 3 4 4 7
+
+    }
+}
+```
+---
+
+# Sorting Problem
+<img width="589" alt="image" src="https://user-images.githubusercontent.com/78966839/199787797-f8440b79-877d-44b3-90b5-b354f9daaeee.png">
+
+# Solution
+
+<img width="354" alt="image" src="https://user-images.githubusercontent.com/78966839/199787964-74ce8035-13f5-4291-9fdc-779af0f80caf.png">
+
+<img width="352" alt="image" src="https://user-images.githubusercontent.com/78966839/199788060-ff09983a-9d2b-4c8c-8d5d-741e80f62939.png">
+
+---
+## My solution
 
 
 

@@ -96,9 +96,31 @@ public class Create2Darr {
 
 <img width="460" alt="image" src="https://user-images.githubusercontent.com/78966839/199997688-098ce520-8e8a-4fd2-88d7-f02309c9e245.png">
 
+---
 
+# [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/200026674-5fef12bb-75b4-467d-9a9a-82259b1c0856.png">
 
+- 1st cover outer Boundary then inner till 0 element.
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/78966839/200027157-81761767-669a-4ec9-a5c7-ee09eb134d8e.png">
+
+- 1 Loop 2 col
+- 1 loop 2 row
+<img width="715" alt="image" src="https://user-images.githubusercontent.com/78966839/200028252-528bee77-17a3-4df4-b23f-8209b9690005.png">
+
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/78966839/200030369-450118c2-8cdb-431b-9a81-a00954923b49.png">
+
+<img width="421" alt="image" src="https://user-images.githubusercontent.com/78966839/200030940-54ab2be8-73c8-43bd-89ac-ad60957129dd.png">
+
+## Approch
+<img width="703" alt="image" src="https://user-images.githubusercontent.com/78966839/200038810-0311e37b-faef-49d0-a2d1-2bb7adba2f71.png">
+
+## size= nxn odd number matrix mxn 
+
+<img width="796" alt="image" src="https://user-images.githubusercontent.com/78966839/200051851-b58ebd6b-d14d-4d89-80ef-fd41664d085f.png">
+
+---
 
 
 

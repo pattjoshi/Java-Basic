@@ -1,1 +1,115 @@
 # 2D Array
+
+# Intuduction to 2D Array
+
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/78966839/199962844-1687d57d-7821-403a-a38e-e3f10e9f275d.png">
+
+<img width="707" alt="image" src="https://user-images.githubusercontent.com/78966839/199963552-8de1fe8c-81d6-4800-8270-deb1e629d58f.png">
+
+# Real life example 
+
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/199964691-564544fe-d436-4aae-807d-b44c60abfbaa.png">
+
+# Representation of 2D array
+- **2D array input 1st row then col**
+<img width="718" alt="image" src="https://user-images.githubusercontent.com/78966839/199967114-ed06de2e-bf18-454c-bc60-dca08d7a24ce.png">
+
+## 2D array creation  Search element Largest and Smallest element in array
+
+```
+import java.util.Scanner;
+
+public class Create2Darr {
+    // Search an element
+    public static boolean Search(int matrix[][], int key) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == key) {
+                    System.out.println("Found at cell (" + i + "," + j + ")");
+                    return true;
+                }
+            }
+        }
+        System.out.println("Key is not found");
+        return false;
+    }
+
+    // Largest and Small
+    public static int LrgSml(int matrix[][]) {
+        int largest = Integer.MIN_VALUE;
+        int smallest = Integer.MAX_VALUE;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (largest < matrix[i][j]) {
+                    largest = matrix[i][j];
+                }
+                if (smallest > matrix[i][j]) {
+                    smallest = matrix[i][j];
+                }
+            }
+        }
+        System.out.println("Largest num is " + largest);
+        System.out.println("Smallest num is " + smallest);
+        return largest;
+    }
+
+    public static void main(String[] args) {
+        int matrix[][] = new int[3][3];
+        int n = 3, m = 3;
+
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        // output
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+        sc.close();
+        Search(matrix, 7);
+        LrgSml(matrix);
+    }
+}
+```
+---
+
+# [Java: A two dimensional array is stored in column-major or row-major order?](https://stackoverflow.com/questions/6630990/java-a-two-dimensional-array-is-stored-in-column-major-or-row-major-order)
+
+- **Consequently, Java is neither column-major nor row-major order**
+
+## Row-major
+<img width="533" alt="image" src="https://user-images.githubusercontent.com/78966839/199993878-220c4a7a-3dad-422c-a043-9dc53f53bc13.png">
+
+
+# Colum-major
+<img width="585" alt="image" src="https://user-images.githubusercontent.com/78966839/199996990-71ed56a4-0db0-49a9-b32e-f93331c57174.png">
+
+
+# 2D Arrays in Memory
+
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/78966839/199997563-91535e1b-da6c-48cd-a1be-6c131c8ae249.png">
+
+<img width="460" alt="image" src="https://user-images.githubusercontent.com/78966839/199997688-098ce520-8e8a-4fd2-88d7-f02309c9e245.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

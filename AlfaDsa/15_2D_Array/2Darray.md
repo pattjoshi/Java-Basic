@@ -122,6 +122,135 @@ public class Create2Darr {
 
 ---
 
+```
+public class SprialMatrix {
+
+    // Spiral Matrix
+    public static void Spiral_matrix(int matrix[][]) {
+        int startRow = 0;
+        int startCol = 0;
+        int endRow = matrix.length - 1;
+        int endCol = matrix[0].length - 1;
+
+        while (startRow <= endRow && startCol <= endCol) {
+            // Top
+            for (int j = startCol; j <= endCol; j++) { // j= col
+                System.out.print(matrix[startRow][j] + " ");
+            }
+            // right
+            for (int i = startRow + 1; i <= endRow; i++) {
+                System.out.print(matrix[i][endCol] + " ");
+            }
+            // botton
+            for (int j = endCol - 1; j >= startCol; j--) {
+                if (startRow == endRow) { // odd number
+                    break;
+                }
+                System.out.print(matrix[endRow][j] + " ");
+            }
+            // left
+            for (int i = endRow - 1; i >= startRow + 1; i--) {
+                if (startCol == endCol) { // // odd number
+                    break;
+                }
+                System.out.print(matrix[i][startCol] + " ");
+            }
+            startRow++;
+            startCol++;
+            endRow--;
+            endCol--;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int matrix[][] = { { 1, 2, 3, 4 },
+                { 5, 6, 7, 8 },
+                { 9, 10, 11, 12 },
+                { 13, 14, 15, 16 } };
+        Spiral_matrix(matrix); // 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+    }
+}
+```
+
+---
+
+# [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)
+
+- left-Top -- Buttom-Right => Primary Diagonal
+- Right-Top -- Butom-Left => Secondary Digonal
+
+<img width="853" alt="image" src="https://user-images.githubusercontent.com/78966839/200134369-d4d34e58-c896-47ce-96c1-7b9ca0056d30.png">
+
+### Approch
+
+- **i == j**
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/78966839/200134446-cf0c5474-ee8a-4211-b214-c3e99a0cf6cd.png">
+
+- **i + j = n-1**
+
+<img width="569" alt="image" src="https://user-images.githubusercontent.com/78966839/200134484-de29996c-5fa3-44f5-8149-87edce3afe06.png">
+
+
+#### Optimize approch
+<img width="399" alt="image" src="https://user-images.githubusercontent.com/78966839/200134519-6ee25dde-8a1a-45c4-a9a4-1b5a6b3b0ea1.png">
+
+
+## Tc :- 0(n)
+
+```
+public class DigonalSum {
+
+    public static int digonal_sum(int matrix[][]) {
+        int sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            // pd
+            sum += matrix[i][i];
+            // SD
+              if (i != matrix.length - i - 1)
+            sum += matrix[i][matrix[0].length - i - 1];
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int matrix[][] = { { 1, 2, 3, 4 },
+                { 5, 6, 7, 8 },
+                { 9, 10, 11, 12 },
+                { 13, 14, 15, 16 } };
+        System.out.println(digonal_sum(matrix));
+    }
+}
+
+// Primary Digonal = i = j
+// SecondaryDigonal = i + j = n-1
+```
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

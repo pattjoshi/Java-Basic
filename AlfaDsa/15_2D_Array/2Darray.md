@@ -282,8 +282,15 @@ public class SearchInSorted {
 
 <img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/200159307-ef2e73d6-9894-4de3-ba7f-18dd4f6742e4.png">
 
+---
+# 2D_array Practic qus
+<img width="332" alt="image" src="https://user-images.githubusercontent.com/78966839/200180153-64890fc0-856d-477f-b6ee-e5c3b9f6af5a.png">
 
+# Solution 
 
+<img width="348" alt="image" src="https://user-images.githubusercontent.com/78966839/200180196-d49956d7-6950-4e7e-8568-3983d0ca9900.png">
+
+<img width="323" alt="image" src="https://user-images.githubusercontent.com/78966839/200180220-00959cf6-a41c-497a-87d0-6cab5503a825.png">
 
 
 

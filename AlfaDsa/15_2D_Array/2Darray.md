@@ -228,14 +228,59 @@ public class DigonalSum {
 
 ---
 
+# [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+
+- All element are sorted row and col wise.
+
+<img width="708" alt="image" src="https://user-images.githubusercontent.com/78966839/200158804-8e286f3f-8ff4-4685-8744-8a66f962c14c.png">
+
+## Staircae Search
+
+<img width="472" alt="image" src="https://user-images.githubusercontent.com/78966839/200158965-8f9ca34a-5c44-4e36-848a-8cb8c5122b69.png">
+
+## For this code i use (0,m-1) logic
+
+<img width="604" alt="image" src="https://user-images.githubusercontent.com/78966839/200159025-60b83403-22db-445c-829a-d1e526a634e9.png">
 
 
 
+```
+public class SearchInSorted {
+    // Sraie case
+    public static boolean stairCase_search(int matrix[][], int key) {
+        int row = 0, col = matrix[0].length - 1;
 
+        while (row < matrix.length && col >= 0) {
+            // CHECK matrix == key
+            if (matrix[row][col] == key) {
+                System.out.println("key is found in (" + row + "," + col + ")");
+                return true;
+            } else if (key < matrix[row][col]) {
+                // LEFT MOVE
+                col--;
+            } else if (key > matrix[row][col]) {
+                // BOTTOM MOVE
+                row++;
+            }
+        }
+        System.out.println("Key is not found");
+        return false;
+    }
 
+    public static void main(String[] args) {
+        int matrix[][] = {
+                { 10, 20, 30, 40 },
+                { 15, 25, 35, 45 },
+                { 27, 29, 37, 48 },
+                { 32, 33, 39, 50 } };
+        int key = 33;
+        stairCase_search(matrix, key);
+    }
+}
+```
+# Time comp is o(n+m)
 
-
-
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/200159307-ef2e73d6-9894-4de3-ba7f-18dd4f6742e4.png">
 
 
 

@@ -292,15 +292,108 @@ public class SearchInSorted {
 
 <img width="323" alt="image" src="https://user-images.githubusercontent.com/78966839/200180220-00959cf6-a41c-497a-87d0-6cab5503a825.png">
 
+# Print the number of 7’s that are inthe 2d array.
+
+```
+public class Howmeney7 {
+    // Print the number of 7’s that are inthe 2d array.
+
+    public static void prsHowMeney7(int arr[][]) {
+
+        int countof7 = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                if (arr[i][j] == 7) {
+                    countof7++;
+                }
+            }
+        }
+        System.out.println(countof7);
+
+    }
+
+    public static void main(String[] args) {
+        int arrar[][] = { { 4, 7, 8 },
+                { 8, 8, 7 } };
+        prsHowMeney7(arrar);
+
+    }
+}
+// row = arr.length = 2
+// col = arr[0].length = 3
+// arr.length - 1 = 1
+```
+
+# Print out the sum of the numbers inthe second row of the “nums” array
+
+```
+public class Sum2row {
+    // Print out the sum of the numbers inthe second row of the “nums” array
+    public static void Sum2ndRow(int num[][]) {
+        int sum = 0;
+        for (int j = 0; j < num[0].length; j++) {
+            sum += num[1][j];
+        }
+        System.out.println(sum);
+    }
+
+    public static void main(String[] args) {
+        int[][] nums = { { 1, 4, 9 }, { 11, 4, 3 }, { 2, 2, 3 } };
+        Sum2ndRow(nums);
+    }
+}
+```
+
+---
 
 
+# Write a program to FindTransposeofa Matrix
+### What is Transpose?
+- Transpose of a matrix is the process of **swapping therows to columns**. For a 2x3 matrix
 
+```
+public class Transopse {
 
+    // Write a program to FindTransposeofa Matrix
+    // What is Transpose?
+    // Transpose of a matrix is the process ofswapping therows to columns. For a 2x3
+    // matrix
 
+    // Print matrix
 
+    public static void main(String[] args) {
+        int row = 2, col = 3;
+        int[][] matrix = { { 2, 3, 7 }, { 5, 6, 7 } };
 
+        // Print orginal matrix
+        PrintMatrix(matrix);
 
+        // transpose matrix
+        int[][] transpose = new int[col][row];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                transpose[j][i] = matrix[i][j];
+            }
+        }
 
+        System.out.println();
+        // Print transposed matrix
+        PrintMatrix(transpose);
+
+    }
+
+    public static void PrintMatrix(int matrix[][]) {
+        System.out.println("The matrix are");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+}
+```
 
 
 

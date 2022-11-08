@@ -139,20 +139,58 @@ String n1 = "Toney";
 
 ---
 
+# SubString
+
+<img width="679" alt="image" src="https://user-images.githubusercontent.com/78966839/200476597-918f0a85-aafe-4fe7-86bc-762fa83620c3.png">
+
+```
+public class SubString {
+
+    // Sub string User define method
+    public static String subString(String str, int si, int ei) {
+        String subStr = "";
+        for (int i = si; i < ei; i++) {
+            subStr += str.charAt(i);
+        }
+        return subStr;
+    }
+
+    public static void main(String[] args) {
+        String str = "HelloWorld";
+        System.out.println(subString(str, 0, 5)); // userDefid method
+        System.out.println(str.substring(0, 6)); // Inbuld
+    }
+}
+```
+---
+
+# Largest String
+
+- **The compareToIgnoreCase() method compares two strings lexicographically, ignoring lower case and upper case differences.**
+
+- **The compareTo() method compares two strings lexicographically.**
+
+### T.c 0(x*n)
+
+<img width="801" alt="image" src="https://user-images.githubusercontent.com/78966839/200480264-4db49d79-8028-47a7-8bff-e540563ada41.png">
 
 
+```
+public class LargestString {
+    public static void main(String[] args) {
+        String frote[] = { "zpple", "mango", "banana" };
+        String larse = frote[0];
+        for (int i = 1; i < frote.length; i++) {
+            if (larse.compareTo(frote[i]) < 0) {
+                larse = frote[i];
+            }
+        }
 
+        System.out.println(larse);
+    }
 
-
-
-
-
-
-
-
-
-
-
+}
+```
 
 
 

@@ -216,8 +216,16 @@ public class StrBuilder {
 }
 
 ```
+---
+# Upercase
 
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/200555784-df0ddaeb-0ba5-482f-84c5-0a6aac4e7103.png">
 
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/78966839/200555952-0940d786-bf98-4838-aebf-b511006c8d13.png">
+
+```
+
+```
 
 
 

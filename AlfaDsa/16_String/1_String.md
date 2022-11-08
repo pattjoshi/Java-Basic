@@ -223,9 +223,54 @@ public class StrBuilder {
 
 <img width="640" alt="image" src="https://user-images.githubusercontent.com/78966839/200555952-0940d786-bf98-4838-aebf-b511006c8d13.png">
 
-```
+---
+# [Srting Compression](https://leetcode.com/problems/string-compression/discussion/)
+
+<img width="861" alt="image" src="https://user-images.githubusercontent.com/78966839/200614862-ead75061-e6e5-4cf1-a3eb-6b0a0c4f685b.png">
 
 ```
+public class compress {
+
+    public static String Compress(String str) {
+
+        StringBuilder sb = new StringBuilder("");
+
+        for (int i = 0; i < str.length(); i++) {
+            Integer conunt = 1;
+            while (i < str.length() - 1 && str.charAt(i) == str.charAt(i + 1)) {
+                conunt++;
+                i++;
+            }
+
+            sb.append(str.charAt(i));
+
+            if (conunt > 1) {
+                sb.append(conunt.toString());
+            }
+        }
+        return sb.toString();
+
+    }
+
+    public static void main(String[] args) {
+        String str = "aaabbccdda";
+        System.out.println(Compress(str)); // a3b2c2d2a
+    }
+}
+```
+# String Qus
+
+<img width="370" alt="image" src="https://user-images.githubusercontent.com/78966839/200632063-18ec33a6-7d72-4818-ad10-fcb7c66b66ef.png">
+
+# Solution
+
+<img width="345" alt="image" src="https://user-images.githubusercontent.com/78966839/200632700-568ac912-31a4-42b6-b0c3-e3766988fb63.png">
+
+<img width="648" alt="image" src="https://user-images.githubusercontent.com/78966839/200632549-a599b8d8-bf43-485d-8145-fcde8a2f417b.png">
+
+<img width="346" alt="image" src="https://user-images.githubusercontent.com/78966839/200632857-4f1937d5-bf30-479b-80db-846ac7afe6ae.png">
+
+---
 
 
 

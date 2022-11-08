@@ -192,10 +192,30 @@ public class LargestString {
 }
 ```
 
+# What are string ?
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/78966839/200490443-d7f27c63-4745-4778-b331-b5b47f1bb3ea.png">
 
+### String are immutablw in java
+<img width="714" alt="image" src="https://user-images.githubusercontent.com/78966839/200491121-ad61607f-192f-40ca-b4ca-ac2855afb2d5.png">
 
+# What is StringBuilder in java ?
 
+- **StringBuilder in Java is a class used to create a mutable, or in other words, a modifiable succession of characters**
 
+<img width="772" alt="image" src="https://user-images.githubusercontent.com/78966839/200493526-75528b7b-0fdb-4d89-8411-6d57cbda7d43.png">
+
+```
+public class StrBuilder {
+    public static void main(String[] args) { // O(26)
+        StringBuilder sb = new StringBuilder("");
+        for (char ch = 'a'; ch <= 'z'; ch++) {
+            sb.append(ch);
+        }
+        System.out.println(sb);
+    }
+}
+
+```
 
 
 

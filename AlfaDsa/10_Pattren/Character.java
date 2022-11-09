@@ -10,6 +10,10 @@ public class Character {
             System.out.println();
         }
     }
+
+    public static char toUpperCase(char charAt) {
+        return 0;
+    }
 }
 
 /*

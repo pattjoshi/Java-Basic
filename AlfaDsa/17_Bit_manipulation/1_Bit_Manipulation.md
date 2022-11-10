@@ -169,13 +169,41 @@ public class getIth {
 
 }
 ```
+# Set ith position
+
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/78966839/201117260-e84ae8d6-a0d1-46f4-948f-6c3aeab5d181.png">
+
+```
+public class Setith {
+
+    public static int setitH(int n, int i) {
+        int bitMask = 1 << i;
+        return n | bitMask;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(setitH(10, 2));
+    }
+}
+```
+# Clear ith Bit
+
+<img width="715" alt="image" src="https://user-images.githubusercontent.com/78966839/201118183-f79af748-4524-4218-9129-0383e9bca9b8.png">
 
 
+```
+public class ClearIthBit {
 
+    public static int clearIthBit(int n, int i) {
+        int bitMask = ~1 << i;
+        return n & bitMask;
+    }
 
-
-
-
+    public static void main(String[] args) {
+        System.out.println(clearIthBit(10, 1)); // 8
+    }
+}
+```
 
 
 

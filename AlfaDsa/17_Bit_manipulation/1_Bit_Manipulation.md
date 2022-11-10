@@ -137,11 +137,38 @@ public class OddEven {
 }
 ```
 
+# Get ith Bit
 
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/78966839/201076080-3cb00fc9-4e7c-4edc-9828-a845b88384f2.png">
 
+<img width="510" alt="image" src="https://user-images.githubusercontent.com/78966839/201076694-f8f589a5-b10f-49fe-b139-56a963f7972c.png">
 
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/78966839/201076824-dd1ed5dc-b120-4a93-913b-cb188da6aeba.png">
 
+### ex 10
+<img width="221" alt="image" src="https://user-images.githubusercontent.com/78966839/201079555-96d32fa7-ce62-46ec-8699-e5073d715163.png">
 
+```
+
+public class getIth {
+    // Get ith position (0,1)
+    public static int getItH(int n, int i) {
+        int bitMask = 1 << i;
+        if ((n & bitMask) == 0) {
+            return 0;
+        } else {
+            return 1;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getItH(10, 2));// 0
+
+    }
+
+}
+```
 
 
 

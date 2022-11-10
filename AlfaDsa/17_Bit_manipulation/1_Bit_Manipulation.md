@@ -170,7 +170,7 @@ public class getIth {
 }
 ```
 # Set ith position
-
+- **change to 1**
 <img width="716" alt="image" src="https://user-images.githubusercontent.com/78966839/201117260-e84ae8d6-a0d1-46f4-948f-6c3aeab5d181.png">
 
 ```
@@ -187,7 +187,7 @@ public class Setith {
 }
 ```
 # Clear ith Bit
-
+- **Change to 0**
 <img width="715" alt="image" src="https://user-images.githubusercontent.com/78966839/201118183-f79af748-4524-4218-9129-0383e9bca9b8.png">
 
 
@@ -195,16 +195,47 @@ public class Setith {
 public class ClearIthBit {
 
     public static int clearIthBit(int n, int i) {
-        int bitMask = ~1 << i;
+        int bitMask = ~(1 << i);
         return n & bitMask;
     }
 
     public static void main(String[] args) {
-        System.out.println(clearIthBit(10, 1)); // 8
+        System.out.println(clearIthBit(10, 1));
     }
 }
 ```
+# Update ith bit
 
+- if n = 0 Clear ith Bit
+- if n == 1 set ith Bit
+
+<img width="687" alt="image" src="https://user-images.githubusercontent.com/78966839/201175765-4de404fc-3c65-446b-9c57-cf845c4b6179.png">
+
+```
+public class updateIthBit {
+
+    // clear Ith bit
+    public static int clearIthBit(int n, int i) {
+        int bitMask = ~(1 << i);
+        return n & bitMask;
+    }
+
+    public static int UpdateIthBit(int n, int i, int newBit) {
+        // if (newBit == 0) {
+        // return clearIthBit(n, i);
+        // } else {
+        // return setitH(n, i);
+        // }
+        n = clearIthBit(n, i);
+        int bitMask = newBit << i;
+        return n | bitMask;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(UpdateIthBit(10, 2, 1)); // 14
+    }
+}
+```
 
 
 

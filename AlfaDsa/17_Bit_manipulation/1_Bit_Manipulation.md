@@ -257,6 +257,84 @@ public class ClearLastIthBit {
     }
 }
 ```
+# Clear range in bit
+
+<img width="747" alt="image" src="https://user-images.githubusercontent.com/78966839/201387174-06f1d16e-0b28-4ab9-8c81-e1fa37835a75.png">
+
+<img width="447" alt="image" src="https://user-images.githubusercontent.com/78966839/201388379-e02640a1-286f-4364-b9ff-52657e99f54f.png">
+
+- in a 1 is stated form J + 1
+- **a = ((~0) << (j + 1))**
+- in b 1 is stated from i - 1
+- Left side 0 and right side 1
+- **b = (1 << i) - 1**
+
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/78966839/201390258-2d14b194-e04b-4fb5-8779-3e6c880a3034.png">
+
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/78966839/201398370-8d2514e3-c91e-4a94-8432-ecb0e173b87f.png">
+
+
+```
+public class ClearRange {
+
+    public static int ClearRangeBit(int n, int i, int j) {
+        int a = ((~0) << (j + 1));
+        int b = (1 << i) - 1;
+        int bitMask = a | b;
+        return n & bitMask;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(ClearRangeBit(10, 2, 4)); // 2
+    }
+}
+```
+
+# Check if a number is prowr of 2 or not
+- **In two power single 1 and Left all 0**
+
+<img width="768" alt="image" src="https://user-images.githubusercontent.com/78966839/201402813-43d89757-a432-4715-83b9-df1ae52e6cb3.png">
+
+```
+public class TowPower {
+    public static boolean isTwopower(int n) {
+        return (n & (n - 1)) == 0;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isTwopower(17)); // false
+    }
+}
+```
+# Count set Bits in a Number
+
+- **set Bit means time's ot 1**
+<img width="288" alt="image" src="https://user-images.githubusercontent.com/78966839/201409891-d6675c67-ca62-4669-a501-452b76563130.png">
+
+<img width="825" alt="image" src="https://user-images.githubusercontent.com/78966839/201409676-1074dd30-0ca7-4316-9bab-303319820675.png">
+
+<img width="756" alt="image" src="https://user-images.githubusercontent.com/78966839/201413173-97962568-6a7f-4e22-a5e3-fd7f1c6334b4.png">
+
+```
+public class CountSetBit {
+
+    public static int countSetBit(int n) {
+        int count = 0;
+        while (n > 0) {
+            if ((n & 1) != 0) {
+                count++;
+            }
+            n = n >> 1;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(countSetBit(15));
+    }
+}
+```
+
 
 
 

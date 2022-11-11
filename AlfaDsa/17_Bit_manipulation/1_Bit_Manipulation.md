@@ -236,9 +236,27 @@ public class updateIthBit {
     }
 }
 ```
+# Clear Last ith Bit
+- **~(0)<<i**
 
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/78966839/201352053-a4d58ebf-2604-419a-be47-067676105222.png">
 
+<img width="368" alt="image" src="https://user-images.githubusercontent.com/78966839/201352472-677dc267-d841-4ec1-8eaa-a62e07b28673.png">
 
+```
+public class ClearLastIthBit {
+    // clear mean 0
+    public static int clearLastIthBit(int n, int i) {
+        int bitMask = ~(0) << i;
+        return n & bitMask;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(clearLastIthBit(15, 2)); // 12
+    }
+}
+```
 
 
 

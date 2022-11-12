@@ -16,6 +16,6 @@ public class BinaryToDec {
     }
 
     public static void main(String[] args) {
-        binTodec(101);
+        binTodec(110);
     }
 }

@@ -334,6 +334,45 @@ public class CountSetBit {
     }
 }
 ```
+# Fast Exponentiation 👎
+
+<img width="591" alt="image" src="https://user-images.githubusercontent.com/78966839/201476193-1515e92f-2409-4b5c-9653-2f1c1a5d55d0.png">
+
+- **N is Convert to binary and reduce the TC in the form of Bit**
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/201476723-631fa57d-bad9-4651-9647-54bb791e0065.png">
+
+```
+public class fastExpo {
+
+    public static int FastExpo(int a, int n) {
+        int ans = 1;
+        while (n > 0) {
+            if ((n & 1) != 0) { // Check LSB
+                ans = ans * a;
+            }
+            a = a * a;
+            n = n >> 1;
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(FastExpo(3, 5));
+    }
+}
+```
+### Dry run
+<img width="544" alt="image" src="https://user-images.githubusercontent.com/78966839/201477082-a7d090df-9692-491d-aecc-8a92bee02958.png">
+
+# Practic qustion
+<img width="365" alt="image" src="https://user-images.githubusercontent.com/78966839/201477128-e2fd1d87-fd8d-4948-81c3-c63a5906a7c4.png">
+
+# Solution
+<img width="358" alt="image" src="https://user-images.githubusercontent.com/78966839/201477143-5948c545-b377-486e-99ef-958d15657690.png">
+
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/78966839/201477160-d0ac88ba-9d39-4eef-a74f-3351618b32e8.png">
+
+
 
 
 

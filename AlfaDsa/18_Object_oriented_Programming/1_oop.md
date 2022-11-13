@@ -7,7 +7,7 @@
 
 # Class
 - **Group of these entities**
-- collection of boject
+- collection of object
 
 <img width="706" alt="image" src="https://user-images.githubusercontent.com/78966839/201483084-6c8c914e-fbef-4a2d-a54c-af8215a68dbb.png">
 
@@ -110,10 +110,60 @@ class Pan { // Blue-Print
     }
 }
 ```
+# The oops has 4 piller
+- **Encapulation**
+- **Inheritance**
+- **Abstraction**
+- **Polymorphism**
+
+<img width="706" alt="image" src="https://user-images.githubusercontent.com/78966839/201531089-8d78150e-755d-4ef4-8af7-a1798210da3b.png">
+
+# Encapulation
+-  Encapsulation is defined as the **Wrappping of data & methods under a single unit**
+- It is also know as **data hidding**
+
+<img width="731" alt="image" src="https://user-images.githubusercontent.com/78966839/201531293-92146c1c-440e-4118-a54e-726c13e3f918.png">
+
+# Constructores :-
+
+<img width="720" alt="image" src="https://user-images.githubusercontent.com/78966839/201532385-1632621b-c6ab-4806-9366-831322f5b0b6.png">
+
+```
+public class conStrUnter {
+    public static void main(String[] args) {
+        Student s1 = new Student("Om");
+        System.out.println(s1.name); // Om
+    }
+}
+
+class Student { // create class
+    String name; // Property
+    int roll;
+
+    Student(String name) {
+        this.name = name;
+    }
+}
+```
+# Type of Constructure
+<img width="748" alt="image" src="https://user-images.githubusercontent.com/78966839/201533499-2eca8df4-6ab7-47c5-afba-762b2f0528bc.png">
 
 
 
+## Parameter
+```
+ Student(String name) {
+        this.name = name;
+    }
+```
 
+## non-Parameter
+
+```
+Student() {
+        System.out.println("constructure is colling...");
+    }
+```
 
 
 

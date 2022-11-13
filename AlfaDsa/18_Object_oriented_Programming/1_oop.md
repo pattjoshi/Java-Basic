@@ -165,6 +165,150 @@ Student() {
     }
 ```
 
+## Copy constructure
+- Copy constructure in java created by user.
+- Transfor all property of object toanother object.
+
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/78966839/201536423-29d6b01f-9bd4-480b-b391-86443384cb99.png">
+
+```
+ // copy constructure
+    Student(Student s1) {
+        this.name = s1.name;
+        this.roll = s1.roll;
+    }
+```
+- array referance copy.
+
+<img width="433" alt="image" src="https://user-images.githubusercontent.com/78966839/201537352-5585b763-9b32-48e2-9458-38e7c44efc07.png">
+
+### All type of constructore
+
+```
+public class conStrUnter {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.name = "Om prakash";
+        s1.roll = 12;
+        s1.password = "abce";
+
+        s1.marks[0] = 100;
+        s1.marks[1] = 50;
+        s1.marks[2] = 90;
+
+        Student s2 = new Student(s1); // s2 copy in s1
+        s2.password = "xyz";
+
+        // Print s2 mark
+        for (int i = 0; i < 3; i++) {
+            s1.marks[1] = 70;
+            System.out.println(s2.marks[i]);
+            // Pirnt all value of s1,Becouse it is a copy constructer
+        }
+
+    }
+}
+
+class Student { // create class
+    String name; // Property
+    int roll;
+    String password;
+    int marks[];
+
+    // copy constructure
+    Student(Student s1) {
+        marks = new int[3];
+        this.name = s1.name;
+        this.roll = s1.roll;
+        this.marks = s1.marks;
+    }
+
+    // Non-Parameter
+    Student() {
+        marks = new int[3];
+        System.out.println("constructure is colling...");
+    }
+
+    // Parameter constructure
+    Student(String name) {
+        marks = new int[3];
+        this.name = name;
+    }
+
+    Student(int roll) {
+        marks = new int[3];
+        this.roll = roll;
+    }
+}
+```
+
+# Shallow & deep copy
+- **Shallow** :- Shallow refrance copy
+- change  reflact
+
+- **Deep copy** :- new array created
+- change don't reflact
+
+<img width="718" alt="image" src="https://user-images.githubusercontent.com/78966839/201537871-af3afcee-867b-4a1c-aeb9-e3a2b7425e0c.png">
+
+# Destructore
+- **Java dont have a Destructore, it's have a Garbage collacter**
+- Garbage collacter :- It automatically delete the unuse value.
+
+<img width="726" alt="image" src="https://user-images.githubusercontent.com/78966839/201538414-4c807111-69eb-4a98-a54e-db7eda5e3fcb.png">
+
+# Inheritance
+
+## What is inheritance in Java?
+- Inheritance in Java is a concept that **acquires the properties from one class to other classes.**
+- for example, the relationship between father and son. Inheritance in Java is a process of acquiring all the behaviours of a parent object.
+
+<img width="577" alt="image" src="https://user-images.githubusercontent.com/78966839/201538903-88fb95eb-3953-420f-81ee-a466b8a34daf.png">
+
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/78966839/201539224-6a232103-3c44-4e3a-9fd3-a53e97ee1790.png">
+
+- **extends Key word inherate from the Parent class**
+
+```
+public class Inhr {
+    public static void main(String[] args) {
+        Fish shark = new Fish();
+        shark.eat();
+    }
+}
+
+// Base class / Parent
+class Animal {
+    String color;
+
+    void eat() {
+        System.out.println("eat");
+    }
+
+    void breath() {
+        System.out.println("Breath");
+    }
+
+}
+
+// Derive class / child
+class Fish extends Animal {
+    int fins;
+
+    void swim() {
+        System.out.println("swim in watert");
+    }
+}
+```
+# Single level Inheritence
+
+- **a class inherits the properties from a single class.**
+
+<img width="353" alt="image" src="https://user-images.githubusercontent.com/78966839/201540057-fbfe90f9-1b2f-4c0b-a87f-9e65e35ea3f6.png">
+
+
+
+
 
 
 

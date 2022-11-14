@@ -488,6 +488,172 @@ class Deer extends Animal {
 
 <img width="699" alt="image" src="https://user-images.githubusercontent.com/78966839/201671401-5ddcedb4-1ac9-4643-aa55-d44573828e06.png">
 
+# Abstract Class
+- abstract method not  Implementation.
+- abstract class object not possible.
+- Property initialization top to Down.
+
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/78966839/201713284-7cfe2197-8508-46ff-8f4e-056b94a278ef.png">
+
+
+
+```
+public class Abstract {
+    public static void main(String[] args) {
+        Mustange myHorse = new Mustange();
+        // Animal -> Horse -> Mustange
+    }
+}
+
+abstract class Animal {
+
+    Animal() {
+        System.out.println("Animal constructer call");
+    }
+
+    void eat() { // non-abstract method
+        System.out.println("animal eating");
+    }
+
+    // abstract method not implement.
+    abstract void walk(); // abstract method
+}
+
+class Horse extends Animal {
+    Horse() {
+        System.out.println("Horse constructer call");
+    }
+
+    void walk() {
+        System.out.println("Horse has 4 lag");
+    }
+}
+
+class Mustange extends Horse {
+    Mustange() {
+        System.out.println("Mustange constructer call");
+    }
+}
+
+class Chicken extends Animal {
+
+    void walk() {
+        System.out.println("Horse has 2 lag");
+    }
+}
+```
+
+# interface
+- **Interface is a blieprint of a class**
+
+<img width="234" alt="image" src="https://user-images.githubusercontent.com/78966839/201725494-ab02116c-b2e7-41ea-938d-2b221e37c4f3.png">
+
+<img width="748" alt="image" src="https://user-images.githubusercontent.com/78966839/201724939-041d167d-ce93-4f4c-8ad7-21e282710ebc.png">
+
+### need of Interface ?
+- Multiple interface in java implement by interface.
+- Total Abstraction
+
+<img width="679" alt="image" src="https://user-images.githubusercontent.com/78966839/201726837-171b226c-102d-40b9-adba-362aa03c5a32.png">
+
+# Interface Properties 
+
+<img width="729" alt="image" src="https://user-images.githubusercontent.com/78966839/201730059-172b65c5-0bc6-4fdb-a400-e9b05ead9a8b.png">
+
+## Chace Plaer Interface Program
+<img width="637" alt="image" src="https://user-images.githubusercontent.com/78966839/201731744-1658c920-de0d-45b7-b742-d7338cd62a1a.png">
+
+```
+public class InherTence {
+    public static void main(String[] args) {
+        Queen q = new Queen();
+        q.moves(); // up,down,left,right,digonal(int all 4 Diraction)
+
+    }
+}
+
+interface ChacePlayer { // Blue Print
+    void moves();
+}
+
+class Queen implements ChacePlayer {
+    public void moves() {
+        System.out.println("up,down,left,right,digonal(int all 4 Diraction) ");
+    }
+}
+
+class Rook implements ChacePlayer {
+    public void moves() {
+        System.out.println("up,down,left,right");
+    }
+}
+
+class King implements ChacePlayer {
+    public void moves() {
+        System.out.println("up,down,left,right,Digonal (by 1 stape)");
+    }
+}
+```
+# Static Keyword
+- **The static keyword is a non-access modifier used for methods and attributes.**
+- Not create multiple creation in memory
+<img width="648" alt="image" src="https://user-images.githubusercontent.com/78966839/201739227-ff680b5b-da05-41c5-ae58-ef086aa03370.png">
+
+### Nested Classes
+<img width="285" alt="image" src="https://user-images.githubusercontent.com/78966839/201739877-c8f56d94-fe42-48b7-a18c-c608fb9999bf.png">
+
+- **stic object create only once in memory.**
+<img width="268" alt="image" src="https://user-images.githubusercontent.com/78966839/201744274-2c7a947a-927f-4070-b7bf-944767f8d0d2.png">
+
+# Super Keyword
+- Super is Bidefault call by compiler
+- refer immediate parent class object.
+
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/78966839/201746053-1af5cb1c-6fb5-4fc7-a6a9-5e0dbb9bd996.png">
+
+
+```
+public class SuPr {
+    public static void main(String[] args) {
+        Horses h = new Horses();
+        System.out.println(h.colorrr);
+
+    }
+}
+
+class Animalll {
+
+    String colorrr;
+
+    Animalll() {
+        System.out.println("Animal constructer call");
+    }
+}
+
+class Horses extends Animalll {
+    Horses() {
+        super(); // refer immediate parent class object.
+        super.colorrr = "Brone";
+        System.out.println("Horse constructer si created");
+    }
+}
+```
+### Home work
+<img width="229" alt="image" src="https://user-images.githubusercontent.com/78966839/201749761-f9bac891-1830-4281-b51a-bb87dec077df.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

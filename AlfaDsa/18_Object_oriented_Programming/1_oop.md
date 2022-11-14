@@ -306,6 +306,195 @@ class Fish extends Animal {
 
 <img width="353" alt="image" src="https://user-images.githubusercontent.com/78966839/201540057-fbfe90f9-1b2f-4c0b-a87f-9e65e35ea3f6.png">
 
+# Multi Level Inheritence
+- **includes the involvement of at least two or more than two classes**
+<img width="482" alt="image" src="https://user-images.githubusercontent.com/78966839/201645137-949ba28f-2992-4fe9-a977-7a3e8deedc13.png">
+
+```
+public class Inhr {
+    public static void main(String[] args) {
+        Dog dobby = new Dog();
+        dobby.eat();
+        dobby.lags = 4;
+        System.out.println(dobby.lags);
+    }
+}
+
+// Base class / Parent
+class Animal {
+    String color;
+
+    void eat() {
+        System.out.println("eat");
+    }
+
+    void breath() {
+        System.out.println("Breath");
+    }
+
+}
+
+// Multi-level Inheritence
+
+class Mammel extends Animal {
+    int lags;
+}
+
+class Dog extends Mammel {
+    String bread;
+}
+```
+# Hierarchial Inheritence
+- **Single Base class multiple Derive class**
+
+<img width="744" alt="image" src="https://user-images.githubusercontent.com/78966839/201649325-b0d8e517-f51b-4479-949f-d599e1e31ac8.png">
+
+```
+public class Inhr {
+    public static void main(String[] args) {
+        Bard batak = new Bard();
+        batak.walk();
+    }
+}
+
+// Base class / Parent
+class Animal {
+    String color;
+
+    void eat() {
+        System.out.println("eat");
+    }
+
+    void breath() {
+        System.out.println("Breath");
+    }
+
+}
+
+// Hierarchial Inheritence
+// Derived class
+class Mammel extends Animal {
+    void walk() {
+        System.out.println("wakd");
+    }
+}
+
+// Derived class
+class Fish extends Mammel {
+    void swim() {
+        System.out.println("swimming");
+    }
+}
+
+// Derived class
+class Bard extends Mammel {
+    void fly() {
+        System.out.println("Fly");
+    }
+}
+```
+# Hybrid Inheritance
+
+- **hybrid inheritance is the composition of two or more types of inheritance**
+
+<img width="699" alt="image" src="https://user-images.githubusercontent.com/78966839/201651203-9e2c72d5-1501-42f8-b44c-8adedb762307.png">
+
+- java dose not have Multiple inheritence.it have Interfaces.
+
+<img width="278" alt="image" src="https://user-images.githubusercontent.com/78966839/201652755-5f446ada-5e9f-4c07-a88d-6a7ca9ab3ab6.png">
+
+# Ploumorphism
+- **Multiple form having the similar work**
+- 2 Type of Ploumorphism 
+- 1.compile time
+- 2.Run time
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/78966839/201657749-893250e5-9660-4e22-9047-294952621fe1.png">
+
+# Method Overloading
+- Method overloading is a Compile time polymorphism
+
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/78966839/201663728-a2ba370f-e2fd-42bc-88d1-d2c05e2fa3b5.png">
+
+
+```
+public class MetOverloading {
+    // OverLoading
+    // Multiple function with the same name but different Parameter. --->
+    public static void main(String[] args) {
+        Calculater calc = new Calculater();
+        System.out.println(calc.sum(1, 2));
+        System.out.println(calc.sum((float) 1.5, (float) 2.5));
+        System.out.println(calc.sum(1, 2, 4));
+    }
+}
+
+class Calculater {
+    int sum(int a, int b) {
+        return a + b;
+    }
+
+    float sum(float a, float b) {
+        return a + b;
+    }
+
+    int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+```
+
+# Method Overriding :-
+- Run time polymorphism.
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/201666436-1ee71ce4-849e-4a96-b225-6538fae30277.png">
+
+```
+public class MetOverriding {
+    // Overriding :- Same function with different definition
+    public static void main(String[] args) {
+        Deer d = new Deer();
+        d.eat(); // Eat Grass
+    }
+}
+
+class Animal {
+    void eat() {
+        System.out.println("Eat anything");
+    }
+}
+
+class Deer extends Animal {
+    void eat() {
+        System.out.println("Eat Grass");
+    }
+}
+```
+
+# Package in java
+
+<img width="607" alt="image" src="https://user-images.githubusercontent.com/78966839/201668673-0c1299d9-8d6b-4e3e-a074-4a4d1903a214.png">
+
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/201669086-fb73febd-2e32-4119-b5ee-8ca63bfa555d.png">
+
+### 2 type of package
+
+<img width="229" alt="image" src="https://user-images.githubusercontent.com/78966839/201669944-1e38ddcf-7a2c-4fc3-b0f4-f8470470e957.png">
+
+# Abstraction 
+- **Hidding Internal details and showing requir thing to user**
+
+- Abstraction Implement 2 way
+- 1. Abstract class
+- 2. Interface
+
+<img width="699" alt="image" src="https://user-images.githubusercontent.com/78966839/201671401-5ddcedb4-1ac9-4643-aa55-d44573828e06.png">
+
+
+
+
+
+
+
+
 
 
 

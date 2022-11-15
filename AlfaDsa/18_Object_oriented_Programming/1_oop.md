@@ -641,25 +641,50 @@ class Horses extends Animalll {
 ### Home work
 <img width="229" alt="image" src="https://user-images.githubusercontent.com/78966839/201749761-f9bac891-1830-4281-b51a-bb87dec077df.png">
 
+---
+# Solved Questions Practice
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/201923703-c88e0360-a760-44f6-8adf-634d8fc88d58.png">
+
+<img width="742" alt="image" src="https://user-images.githubusercontent.com/78966839/201925270-78413157-848e-4265-a918-42cf073cd08a.png">
+
+<img width="748" alt="image" src="https://user-images.githubusercontent.com/78966839/201926317-14b24f8c-825e-47eb-a0a7-0c91eee4f277.png">
+
+-**Private and protacted class Object are not created**
+
+## Access modifier in java
+
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/78966839/201926817-32535181-3e56-4a16-95a5-5983bfb15e9b.png">
+
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/78966839/201928218-42fc6771-98df-42c3-92fa-7b3d849f8e28.png">
+
+### Why Opction 3 is correct
+
+- **In java we can assign child object to patent referance**
+<img width="375" alt="image" src="https://user-images.githubusercontent.com/78966839/201929130-21586d6e-6e9c-4431-b0ce-b026fd6f1b15.png">
+
+<img width="756" alt="image" src="https://user-images.githubusercontent.com/78966839/201930641-5cdeee50-8311-4e7c-a6e0-474e7458cdf8.png">
+
+<img width="746" alt="image" src="https://user-images.githubusercontent.com/78966839/201933147-d4d6a119-7c95-4e86-8586-c79ae46d5dea.png">
+
+<img width="679" alt="image" src="https://user-images.githubusercontent.com/78966839/201933715-00ebf123-fb0e-49d3-94c0-727b5d72b29b.png">
+
+<img width="697" alt="image" src="https://user-images.githubusercontent.com/78966839/201934937-6bbfba13-fdfa-4030-84f1-5e524aae48b6.png">
+
+<img width="629" alt="image" src="https://user-images.githubusercontent.com/78966839/201935866-d7eef06f-02c2-4f66-b6cc-177afc3e3e5a.png">
+
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/78966839/201936265-52217d7d-6c94-4974-9dfc-8d2fb3d66e70.png">
 
 
+---
+# OOps Practic qustion
+<img width="332" alt="image" src="https://user-images.githubusercontent.com/78966839/201921575-28c855ab-6fdb-46e2-99d9-879c0a0aec8b.png">
 
+<img width="333" alt="image" src="https://user-images.githubusercontent.com/78966839/201921604-9df4b7dd-a507-40e3-9a17-745d602e121a.png">
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/78966839/201921642-673a2f55-7fc8-4f5f-90af-d2ab5fc97b01.png">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Oops solution
+<img width="343" alt="image" src="https://user-images.githubusercontent.com/78966839/201921790-a37f7695-93db-4778-890d-ca6b3b80f8dd.png">
+<img width="347" alt="image" src="https://user-images.githubusercontent.com/78966839/201921831-90f31690-75b0-4000-9934-d1b3f1d43d28.png">
 
 
 

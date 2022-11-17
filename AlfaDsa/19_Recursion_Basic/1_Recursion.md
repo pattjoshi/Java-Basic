@@ -1,4 +1,6 @@
 # Recursion Basic
+- **If you Imagin Stack Analysis  and tree graph of Recurshion it's you are in right path**
+
 
 - bare minimum concept to learn Recurshion :- Iteration,Gunction
 - Recursion use in :- Tree,Graph,DP
@@ -156,8 +158,95 @@ public class NnaturalNum {
 - **S.c o(n)**
 <img width="718" alt="image" src="https://user-images.githubusercontent.com/78966839/202440893-a80e6220-5f0d-4a1e-ae79-cb5ba74275d2.png">
 
+# Print the nth of Fibonashi number.
+
+<img width="709" alt="image" src="https://user-images.githubusercontent.com/78966839/202496070-84857978-a7cc-476c-8679-313c559b9e0e.png">
+
+## Base case
+<img width="193" alt="image" src="https://user-images.githubusercontent.com/78966839/202498080-fe4492c9-edf3-4738-a42b-efa3ea63761c.png">
 
 
+- **fin(n) = fin(n-1) + fin(n-2)**
+- **Sum of last 2 Number**
+- **n = 5**
+- fib(4) = 3
+- fib(3) = 2
+- Add fib(4) + fib(3) = 5
+
+<img width="401" alt="image" src="https://user-images.githubusercontent.com/78966839/202498836-e1ba6777-a0c4-47e5-8058-ac5fe6d78d4d.png">
+
+## Approch
+<img width="685" alt="image" src="https://user-images.githubusercontent.com/78966839/202500644-3253c860-e2d0-418f-a0f3-d6be7135b246.png">
+
+```
+public class Fibonashi {
+    public static int fibo(int n) {
+        if (n == 0 || n == 1) {
+            return n;
+        }
+        int fnm1 = fibo(n - 1);
+        int fnm2 = fibo(n - 2);
+        int fn = fnm1 + fnm2;
+        return fn;
+    }
+
+    public static void main(String[] args) {
+        int n = 6;
+        System.out.println(fibo(n)); // 8
+
+    }
+}
+
+// Fibonasi is Sum of last 2 number
+// fib(n) = fin(n-1) + fin(n-2)
+```
+
+# Callstack Analysis s1
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/78966839/202505868-132219b9-da90-4337-81ed-2fcc3dcd0f2e.png">
+
+# Callstack Analysis s1
+<img width="747" alt="image" src="https://user-images.githubusercontent.com/78966839/202507732-4a1ce47e-9132-4f03-8530-db123e4b1341.png">
+
+## Time and space complexcity
+<img width="588" alt="image" src="https://user-images.githubusercontent.com/78966839/202510406-18621f53-c044-493a-beff-c81cd5df824e.png">
+
+# Check of a given array is sorted or not.(assending)
+
+<img width="556" alt="image" src="https://user-images.githubusercontent.com/78966839/202520918-fe5130c8-0c0c-48f6-bca5-c88250cf52f0.png">
+
+<img width="749" alt="image" src="https://user-images.githubusercontent.com/78966839/202522860-efd634df-528d-433a-a5fc-37293222e7f2.png">
+
+## Approch
+
+<img width="305" alt="image" src="https://user-images.githubusercontent.com/78966839/202524587-008d0dbb-a384-4e94-a4f8-21fd52c5b820.png">
+
+```
+public class isSorted {
+    public static boolean issorted(int arr[], int i) {
+        if (i == arr.length - 1) {
+            return true;
+        }
+        if (arr[i] > arr[i + 1]) {
+            return false;
+        }
+        return issorted(arr, i + 1);
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 2, 3, 9, 5 };
+        System.out.println(issorted(arr, 0));
+    }
+}
+```
+## Stack analysis s1
+<img width="705" alt="image" src="https://user-images.githubusercontent.com/78966839/202535003-69c515f7-8395-471b-944c-343c2c909602.png">
+
+
+## Stack analysis s1
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/78966839/202524899-4d0163c0-b351-4746-814e-55c276131f02.png">
+
+## Time and Space complexcity
+<img width="133" alt="image" src="https://user-images.githubusercontent.com/78966839/202525410-383e921a-8d1f-4f1f-b295-af3baa3f113f.png">
 
 
 

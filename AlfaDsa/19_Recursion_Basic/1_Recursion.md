@@ -90,12 +90,71 @@ public class IncPrint {
 <img width="749" alt="image" src="https://user-images.githubusercontent.com/78966839/202263950-b67e3f1f-3269-4ee4-93a8-1280c5560b46.png">
 <img width="771" alt="image" src="https://user-images.githubusercontent.com/78966839/202264343-33b4be72-87a4-4441-a061-99f84df8931a.png">
 
+# Print Factorial of a number n.
+<img width="684" alt="image" src="https://user-images.githubusercontent.com/78966839/202415642-bc7f3d4e-c214-494c-a33a-a967a3b1620b.png">
 
+```
+public class FactoRialNumber {
+    // Print factorial of a number
+    public static int fact(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        int fnm1 = fact(n - 1);
+        int fn = n * fact(n - 1);
+        return fn;
+    }
 
+    public static void main(String[] args) {
+        int n = 5;
+        System.out.println(fact(n)); // 120
+    }
+}
 
+// n * fact(n - 1) ---> 1 * 1 = 1
+// 1 * 2 = 2
+// 2 * 3 = 6
+// 6 * 4 = 24
+// 24 * 5 = 120
+```
+## Stack Analysis s1
+<img width="754" alt="image" src="https://user-images.githubusercontent.com/78966839/202428676-d7d90d81-5d3f-4772-9b41-03077da0ffa4.png">
 
+## Stack Analysis s2
+- **T.c = o(n)**
+- **S.C = o(n)**
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/78966839/202429395-41da4ccb-cca5-4049-a50a-2bac181fc51a.png">
 
+# Print sum of first n natural number
+<img width="698" alt="image" src="https://user-images.githubusercontent.com/78966839/202436986-533cf47d-8eba-48f0-bc6a-af7779348dcb.png">
 
+<img width="426" alt="image" src="https://user-images.githubusercontent.com/78966839/202439278-5ac1cea7-e52b-446f-8641-04b59e447ff2.png">
+
+```
+public class NnaturalNum {
+    // Print the sum of n natural number
+    public static int CalcSum(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        int sn = n + CalcSum(n - 1);
+        return sn;
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        System.out.println(CalcSum(n));
+    }
+}
+```
+
+## Callstack Analys s1
+<img width="745" alt="image" src="https://user-images.githubusercontent.com/78966839/202440573-7f44088a-61ab-4ada-86ca-defb36518b30.png">
+
+## Callstack Analys s2
+- **T.C o(n)**
+- **S.c o(n)**
+<img width="718" alt="image" src="https://user-images.githubusercontent.com/78966839/202440893-a80e6220-5f0d-4a1e-ae79-cb5ba74275d2.png">
 
 
 

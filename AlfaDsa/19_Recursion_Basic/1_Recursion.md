@@ -311,6 +311,62 @@ public class LastOccrance {
     }
 }
 ```
+# Print X^n
+
+<img width="582" alt="image" src="https://user-images.githubusercontent.com/78966839/202755716-83f79d42-77f2-4f75-ad3e-53ce1f51939a.png">
+
+## Basic approch
+<img width="464" alt="image" src="https://user-images.githubusercontent.com/78966839/202756765-b90b73c9-fe96-4628-9c39-7033cbbe9e41.png">
+
+## Approch
+<img width="387" alt="image" src="https://user-images.githubusercontent.com/78966839/202757456-580703b5-df26-45e6-aaaf-79701a0956d1.png">
+
+## Code
+
+```
+public class PrintPower {
+    public static int power(int x, int n) {
+        if (n == 0) {
+            return 1;
+        }
+        // 1 way
+        // int pnm1 = power(x, n - 1);
+        // int pn = x * pnm1;
+        // return pn;
+        // 2 way
+        return x * power(x, n - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(power(2, 10)); // 1024
+    }
+}
+```
+
+## Call stack
+<img width="738" alt="image" src="https://user-images.githubusercontent.com/78966839/202762289-28708703-992e-4c04-a173-6f8544e976da.png">
+
+## Call stack
+<img width="732" alt="image" src="https://user-images.githubusercontent.com/78966839/202762862-96427484-9fb5-43e8-b429-66c7d38e952f.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

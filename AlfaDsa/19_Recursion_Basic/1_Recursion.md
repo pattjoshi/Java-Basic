@@ -249,14 +249,68 @@ public class isSorted {
 <img width="133" alt="image" src="https://user-images.githubusercontent.com/78966839/202525410-383e921a-8d1f-4f1f-b295-af3baa3f113f.png">
 
 
+# WAF to find the first occurence of an element in an array.
 
+<img width="644" alt="image" src="https://user-images.githubusercontent.com/78966839/202688878-91f87977-b7ef-42ba-b559-04bab94fb33f.png">
 
+- **if key is not found then return -1**
+# Approch
+<img width="181" alt="image" src="https://user-images.githubusercontent.com/78966839/202689168-3e193c0c-c6f9-4b96-831c-d83155655a52.png">
 
+```
+public class FirstOccer {
+    // find the first occerance of an element in array
+    public static int Occ1st(int arr[], int key, int i) {
+        if (i == arr.length) {
+            return -1;// Key is not found
+        }
+        if (arr[i] == key) {
+            return i;
+        }
+        return Occ1st(arr, key, i + 1);
 
+    }
 
+    public static void main(String[] args) {
+        int arr[] = { 1, 3, 4, 5, 7, 6, 5, 3, 6, 5 };
+        System.out.println(Occ1st(arr, 5, 0));
+    }
+}
+```
+## Stack analysis s1
 
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/78966839/202693080-4e567639-3a39-49b8-93a2-f69f92de9cb4.png">
 
+## Stack analysis s2
+<img width="722" alt="image" src="https://user-images.githubusercontent.com/78966839/202693240-a88aeacf-1d87-408b-85ad-087fac04af48.png">
 
+### Tc and sc
+<img width="150" alt="image" src="https://user-images.githubusercontent.com/78966839/202693295-2c0f2f9c-1e61-43ec-ad49-c3878cf3a977.png">
+
+# Wap find the last occerance of in array
+
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/78966839/202699853-e3c72adf-509a-486b-9438-b23edf2dc04f.png">
+
+```
+public class LastOccrance {
+    public static int Lastocc(int arr[], int key, int i) {
+        if (i == arr.length) {
+            return -1; // not exist
+        }
+        int isLast = Lastocc(arr, key, i + 1); // Look forword
+        if (arr[i] == key && isLast == -1) { // check with self
+            return i;
+        }
+        return isLast;
+
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 3, 4, 5, 7, 6, 5, 3, 6, 5 };
+        System.out.println(Lastocc(arr, 5, 0));
+    }
+}
+```
 
 
 

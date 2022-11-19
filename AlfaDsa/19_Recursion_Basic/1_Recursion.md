@@ -383,10 +383,94 @@ public class PowerOptimize {
     }
 }
 ```
+---
+
+# Tiling Problem
+<img width="749" alt="image" src="https://user-images.githubusercontent.com/78966839/202859395-da3a5faa-55d6-4d78-93a4-8caba88aab91.png">
+
+## Tiles are place in varticallt
+<img width="698" alt="image" src="https://user-images.githubusercontent.com/78966839/202859522-86f691e9-3c82-4254-a41d-059f2ca3ef1b.png">
+
+- Board = 2 * n
+- 2 is Breath
+- n is length
+
+## Tiles are place in Horizontaly
+<img width="662" alt="image" src="https://user-images.githubusercontent.com/78966839/202859554-94d8f9d0-1560-426a-8ccd-e887fbbcb1a9.png">
+
+- **tile size "2 * 1"**
+- 2 is Breath
+- 1 is length
+
+## Tiles are place in Horizontaly and varticallt
+<img width="722" alt="image" src="https://user-images.githubusercontent.com/78966839/202859673-b6b9a6b4-2b32-484e-87c7-b58448b51585.png">
+
+## Let's see with example with 3
+- n = 3
+- means 2 * 3
+- tile 2 * 1
+
+- **Count the different ways**
+<img width="653" alt="image" src="https://user-images.githubusercontent.com/78966839/202860767-abeb98c0-1fd5-4da5-bfca-0966edda0033.png">
+
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/78966839/202860921-adad8bb6-84b3-476c-be34-dfed56991e79.png">
+
+## Tiling proble approch
 
 
+<img width="709" alt="image" src="https://user-images.githubusercontent.com/78966839/202861232-8fa593c8-6f94-4b77-a578-4ed7acf07341.png">
 
+<img width="693" alt="image" src="https://user-images.githubusercontent.com/78966839/202861272-f0290b55-787b-48c7-8a01-c58d4a6f5b41.png">
 
+- **1.Base case**
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/78966839/202861312-3280fb43-6af2-4321-9f2a-c4cc4ed4f5e7.png">
+
+- **2.Kaam = chose**
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/78966839/202861496-17e0817d-8d9d-468a-b61a-76afb99567ba.png">
+
+## varticae
+
+- ist is feel 2 * n
+- rest is feel 2 * n-1
+
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/78966839/202861588-2d1b9cd4-3b84-4cc0-b104-c80024576a7d.png">
+
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/78966839/202861683-12c2eb1d-5110-4e42-bc1a-e57e98bcef73.png">
+
+## Horizontally
+- **Once you place tile in Horizontally you can not place Vartically**
+<img width="509" alt="image" src="https://user-images.githubusercontent.com/78966839/202861794-0b7b0581-a833-499c-aa44-eea272805514.png">
+
+## total =  varticle + Horizontally
+
+<img width="309" alt="image" src="https://user-images.githubusercontent.com/78966839/202861880-1d313a9b-ae21-4494-81d3-7fed624b5632.png">
+
+- Base case :- (0 ,1) way 1
+- Kaam := choice make
+
+## Code
+```
+public class Tiling {
+    public static int TilingProblem(int n) { // 2 * n (floor size)
+        // Base case
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        // Kaam
+        // varticaly
+        int fnm1 = TilingProblem(n - 1);
+        // Horizontaly
+        int fnm2 = TilingProblem(n - 2);
+        int total = fnm1 + fnm2;
+        return total;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(TilingProblem(4));
+
+    }
+}
+```
 
 
 

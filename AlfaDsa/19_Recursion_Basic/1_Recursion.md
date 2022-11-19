@@ -349,9 +349,40 @@ public class PrintPower {
 ## Call stack
 <img width="732" alt="image" src="https://user-images.githubusercontent.com/78966839/202762862-96427484-9fb5-43e8-b429-66c7d38e952f.png">
 
+---
+# Print X^n in 0
+- look thin  as even and odd form
 
+<img width="698" alt="image" src="https://user-images.githubusercontent.com/78966839/202850144-46a9782b-932e-4fec-a496-4805ef46ca37.png">
 
+### Example
+<img width="736" alt="image" src="https://user-images.githubusercontent.com/78966839/202850242-8b013248-025d-4785-a44e-bd2da1686144.png">
 
+## Time c := o(logn)
+<img width="734" alt="image" src="https://user-images.githubusercontent.com/78966839/202850323-b5cfa113-a54a-4cc8-a9fa-2624071d9b79.png">
+
+```
+public class PowerOptimize {
+    // Power of x^n in o(log n)
+    public static int OptimizeOpw(int x, int n) {
+        if (n == 0) {
+            return 1;
+        }
+        // even
+        int halfPow = OptimizeOpw(x, n / 2);
+        int halfPowSq = halfPow * halfPow;
+        // odd
+        if (n % 2 != 0) {
+            halfPowSq = x * halfPowSq;
+        }
+        return halfPowSq;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(OptimizeOpw(2, 10)); // 1024
+    }
+}
+```
 
 
 

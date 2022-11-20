@@ -471,8 +471,53 @@ public class Tiling {
     }
 }
 ```
+# Remove Duplicates in string (a-z)
+<img width="698" alt="image" src="https://user-images.githubusercontent.com/78966839/202885734-fc489225-c7d8-4a2f-915b-eae654020717.png">
 
+## Variable decleariction
 
+- **If the variable occer in 1st store 'T'**
+<img width="755" alt="image" src="https://user-images.githubusercontent.com/78966839/202885977-908dfa3f-c3ea-45f3-9495-6972434d7733.png">
+
+## How compiler know 'a' is in index 0
+- In java Type converction
+<img width="378" alt="image" src="https://user-images.githubusercontent.com/78966839/202886472-d1431a2b-3ffd-4ca4-b5b8-391d050cc3ba.png">
+
+### How to find index of a character
+- **index = Current char - 'a'**
+
+<img width="516" alt="image" src="https://user-images.githubusercontent.com/78966839/202886693-59246e13-767b-45af-a5c8-1954a4078a39.png">
+
+## Approch of recurshion
+<img width="560" alt="image" src="https://user-images.githubusercontent.com/78966839/202886815-439aab3a-45d0-48c1-b855-d94d80a9c887.png">
+
+```
+
+public class RemDublication {
+
+    public static void removeDuplicates(String str, int idx, StringBuilder newStr, boolean map[]) {
+        if (idx == str.length()) {
+            System.out.println(newStr);
+            return;
+        }
+
+        // kaam
+        char currChar = str.charAt(idx);
+        if (map[currChar - 'a'] == true) {
+            // duplicate
+            removeDuplicates(str, idx + 1, newStr, map);
+        } else {
+            map[currChar - 'a'] = true;
+            removeDuplicates(str, idx + 1, newStr.append(currChar), map);
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "appnacollege";
+        removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
+    }
+}
+```
 
 
 

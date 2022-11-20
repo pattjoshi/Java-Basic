@@ -595,5 +595,31 @@ public class FriendPair {
 }
 ```
 
+# Binary Strings Problem
+
+- **Consecutive :- repitative **
+- Not print consecutive 1
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/78966839/202911355-5a0bdab5-f3c3-4092-9782-bcb1ac80bc5b.png">
+
+<img width="664" alt="image" src="https://user-images.githubusercontent.com/78966839/202911531-e348070f-4fe5-4fc6-9bdd-511e560c97ee.png">
+
+## Recurshion Approch
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/78966839/202911824-eb46fc24-fb99-4b11-8d9a-46c1944602b4.png">
+
+- LastPlace = 1 , we can't Place 1
+- LasePlace = 0 , we can Place 0,1
+<img width="743" alt="image" src="https://user-images.githubusercontent.com/78966839/202911718-228c5669-adf5-4e0c-9847-fcfc375ff768.png">
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -519,15 +519,81 @@ public class RemDublication {
 }
 ```
 
+# [Friends Pairing Problem](https://www.geeksforgeeks.org/friends-pairing-problem/)
+
+<img width="745" alt="image" src="https://user-images.githubusercontent.com/78966839/202905286-c7dd2d40-3aa0-45d0-8a8d-4d10438f8be7.png">
+
+- **Each friend can be pair Once**
+- Hear a and b in Pair , a not pair with c and b not pair with c
+<img width="224" alt="image" src="https://user-images.githubusercontent.com/78966839/202905538-a35bca15-f858-43ec-9830-76bd15543e84.png">
+
+## Total Number of way
+
+<img width="758" alt="image" src="https://user-images.githubusercontent.com/78966839/202906116-0cae8eea-b724-4743-897e-264cbf1c0c1c.png">
+
+## Recurshion Approch
+- **Single**
+<img width="764" alt="image" src="https://user-images.githubusercontent.com/78966839/202906299-d66c29c7-8c93-47d9-b662-c4081b285938.png">
+
+- **Pair**
+<img width="216" alt="image" src="https://user-images.githubusercontent.com/78966839/202906717-55e2929c-aa71-45dc-a73d-af497c6fe6f5.png">
+
+<img width="480" alt="image" src="https://user-images.githubusercontent.com/78966839/202906955-7abd7312-b054-42ae-8430-88fb0a1e8c0d.png">
+
+## Total way
+<img width="641" alt="image" src="https://user-images.githubusercontent.com/78966839/202907055-3dc948a8-2156-42ba-b84b-f31b1eaee529.png">
+
+## Code 
+- **1 way to wtie a code**
+
+```
+public class FriendPair {
+    public static int friendPair(int n) {
+        if (n == 1 || n == 2) { // Base case
+            return n;
+        }
+        // choice
+        // single
+        int fnm1 = friendPair(n - 1);
+
+        // Pair
+        int fnm2 = friendPair(n - 2);
+        int pairWay = (n - 1) * fnm2;
+
+        // total way
+        int totalWay = fnm1 + pairWay;
+        return totalWay;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(friendPair(3));
+
+    }
+}
+```
 
 
+## 2 Way 3 liner
+- friendPair(n - 1) ---> Single choise
+- (n - 1) ---> How meney Pair can make
+- * friendPair(n - 2) -----> Choishe of pair
 
+```
+public class FriendPair {
+    public static int friendPair(int n) {
+        if (n == 1 || n == 2) { // Base case
+            return n;
+        }
 
+        return friendPair(n - 1) + (n - 1) * friendPair(n - 2);
+    }
 
+    public static void main(String[] args) {
+        System.out.println(friendPair(3));
 
-
-
-
+    }
+}
+```
 
 
 

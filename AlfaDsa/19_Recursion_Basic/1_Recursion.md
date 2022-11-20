@@ -610,13 +610,43 @@ public class FriendPair {
 - LasePlace = 0 , we can Place 0,1
 <img width="743" alt="image" src="https://user-images.githubusercontent.com/78966839/202911718-228c5669-adf5-4e0c-9847-fcfc375ff768.png">
 
+## Example with 3 
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/202916027-3eddcaa9-0399-4734-8e78-68ae3f99a85c.png">
 
+- Last Place tell Which value set in Privious (0,1)
 
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/78966839/202916568-eae0a846-dece-4021-a290-06d3ae237b6d.png">
 
+ ```
+ public class BinaryString {
+    public static void PrintBinaryString(int n, int lastPlace, String str) {
+        if (n == 0) {
+            System.out.println(str);
+            return;
+        }
+        // Place all chair in 0
+        PrintBinaryString(n - 1, 0, str + "0");
+        if (lastPlace == 0) {
+            PrintBinaryString(n - 1, 1, str + "1");
+        }
+    }
 
+    public static void main(String[] args) {
+        PrintBinaryString(3, 0, "");
+    }
+}
+ ```
+## Stack anlysis
+- Now the base case is hit and return 
 
+<img width="769" alt="image" src="https://user-images.githubusercontent.com/78966839/202918262-c5de1d04-dc5e-4871-a8fa-db6eccaffc46.png">
+<img width="541" alt="image" src="https://user-images.githubusercontent.com/78966839/202918382-af9f8d4c-beea-4d6d-9962-f0e2af0426e9.png">
 
+- Set 1 in chair
+<img width="545" alt="image" src="https://user-images.githubusercontent.com/78966839/202918478-e04d7327-402e-4ed6-987c-8ab1d467d012.png">
 
+- Final Op
+<img width="762" alt="image" src="https://user-images.githubusercontent.com/78966839/202918609-06010af6-de03-4683-a6ee-5d14374034c8.png">
 
 
 

@@ -648,6 +648,20 @@ public class FriendPair {
 - Final Op
 <img width="762" alt="image" src="https://user-images.githubusercontent.com/78966839/202918609-06010af6-de03-4683-a6ee-5d14374034c8.png">
 
+# Recurshio Qus
+<img width="340" alt="image" src="https://user-images.githubusercontent.com/78966839/203025102-56a0e42f-7029-431b-b65d-2b31e1a58a33.png">
+
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/78966839/203025178-08a35efc-cbe6-48f2-81ce-8112d9d625c3.png">
+
+<img width="348" alt="image" src="https://user-images.githubusercontent.com/78966839/203025271-de40157d-6e00-4043-ab04-7c083367b13d.png">
+
+
+# Recurshio solution
+<img width="361" alt="image" src="https://user-images.githubusercontent.com/78966839/203024810-c8c30287-9819-4d02-bbf6-b1f7323bdabd.png">
+
+<img width="326" alt="image" src="https://user-images.githubusercontent.com/78966839/203024870-fdce7e7b-fe2a-460f-a464-bf58aa9571bf.png">
+
+<img width="352" alt="image" src="https://user-images.githubusercontent.com/78966839/203024936-6503c79e-b23f-46a9-9d7f-37503eb20939.png">
 
 
 

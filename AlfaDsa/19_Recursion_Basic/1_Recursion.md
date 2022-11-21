@@ -663,6 +663,75 @@ public class FriendPair {
 
 <img width="352" alt="image" src="https://user-images.githubusercontent.com/78966839/203024936-6503c79e-b23f-46a9-9d7f-37503eb20939.png">
 
+---
+
+# My Solution
+
+## Question1
+
+```
+public class OcceringIndex {
+    // Find the all Oxcurence of an array which index
+    public static void allOccurences(int arr[], int key, int i) {
+
+        if (i == arr.length) {
+            return;
+        }
+        if (arr[i] == key) {
+            System.out.print(i + " ");
+        }
+        allOccurences(arr, key, i + 1);
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 2, 4, 6, 7, 3, 3, 2, 6, 3, 2, 7, 2, 4, 2 };
+        int key = 2;
+        allOccurences(arr, key, 0);
+
+    }
+}
+```
+
+## Solution 2
+
+```
+public class StringNumber {
+    static String Digite[] = { "Zero", "one", "Two", "Three", "Four", "Five", "Six", "Eight", "Nine" };
+
+    public static void PrintDegite(int num) {
+        if (num == 0) { // Base case
+            return;
+        }
+        // lase Degith
+        int lastDeite = num % 10;
+        PrintDegite(num / 10); // Add to last degite
+        System.out.print(Digite[lastDeite] + " ");
+
+    }
+
+    public static void main(String[] args) {
+        PrintDegite(231); // Two Three one
+
+    }
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -717,11 +717,73 @@ public class StringNumber {
 
 ```
 
+# Solution 3
+```
+public class LengthofString {
+    public static int Largestring(String str) {
+        if (str.length() == 0) {
+            return 0;
+        }
+        return Largestring(str.substring(1)) + 1;
+    }
+
+    public static void main(String[] args) {
+        String str = "abcdefghij";
+        System.out.println(Largestring(str)); // 10
+
+    }
+}
+```
+# Solution 4
+```
+public class SubStringSameSE {
+    // find the name of substring with equal first and last latter
+    public static int ContSubString(String str, int i, int j, int n) {
+        if (n == 1) { // Single latter substring
+            return 1;
+        }
+        if (n <= 0) {
+            return 0;
+        }
+        int res = ContSubString(str, i + 1, j, n - 1) + ContSubString(str, i, j - 1, n - 1)
+                - ContSubString(str, i + 1, j - 1, n - 2);
+        if (str.charAt(i) == str.charAt(j)) {
+            res++;
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        String str = "abc";
+        int n = str.length();
+        System.out.println(ContSubString(str, 0, n - 1, n));
+
+        // i = Starting from statr
+        // j = Starting from end
+
+    }
+}
+```
+
+# Solution 5
+
+## n = 3
+<img width="304" alt="image" src="https://user-images.githubusercontent.com/78966839/203131381-5ae25e52-bd3e-44a0-b01c-395179d26998.png">
+
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/78966839/203130262-2186f5e2-48ca-40f5-a2fc-8a5058665543.png">
+
+<img width="498" alt="image" src="https://user-images.githubusercontent.com/78966839/203130324-26759b59-5553-42ef-a873-e585db450a72.png">
+
+## N =2
+<img width="948" alt="image" src="https://user-images.githubusercontent.com/78966839/203133506-6d8a2b59-60f4-449b-a699-ce03a9a1d3b6.png">
+<img width="292" alt="image" src="https://user-images.githubusercontent.com/78966839/203133555-29d62700-9f65-45d1-aa65-d9e5e7369d8a.png">
 
 
+## Approch
+<img width="286" alt="image" src="https://user-images.githubusercontent.com/78966839/203133648-38d05afa-ca47-4d8a-a334-ffb33c9b2150.png">
 
-
-
+## You have follow some Rool
+<img width="604" alt="image" src="https://user-images.githubusercontent.com/78966839/203133974-2684fdec-c2fb-436a-80e2-601d8d4f803f.png">
 
 
 

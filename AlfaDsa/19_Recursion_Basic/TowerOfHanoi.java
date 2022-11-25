@@ -1,19 +1,19 @@
 public class TowerOfHanoi {
-    public static void towerOfHanoi(int n, String src, String helper, String dest) {
-        if (n == 1) {
-            System.out.println("transfer disk " + n + " from " + src + " to " + dest);
+    public static void towerOfHanoi(int n, char from_rod,
+            char to_rod, char aux_rod) {
+        if (n == 0) {
             return;
         }
-        // transfer top n-1 from src to helper using dest as 'helper'
-        towerOfHanoi(n - 1, src, dest, helper);
-        // transfer nth from src to dest
-        System.out.println("transfer disk " + n + " from " + src + " to " + helper);
-        // transfer n-1 from helper to dest using src as 'helper'
-        towerOfHanoi(n - 1, helper, src, dest);
+        towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+        System.out.println("Move disk " + n + " from rod "
+                + from_rod + " to rod "
+                + to_rod);
+        towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
     }
 
     public static void main(String args[]) {
         int n = 3;
-        towerOfHanoi(n, "A", "B", "C");
+        // towerOfHanoi(n, "A", "B", "C");
+        towerOfHanoi(n, 'A', 'C', 'B');
     }
 }

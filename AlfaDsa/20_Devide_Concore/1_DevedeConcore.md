@@ -116,14 +116,28 @@ public class MargeSort {
 }
 ```
 
+<img width="718" alt="image" src="https://user-images.githubusercontent.com/78966839/204131716-7df0fd73-8df4-4f81-a2df-4586d69236d9.png">
 
+---
 
+# Quick Sort
+- **Not use extra Space**
+<img width="472" alt="image" src="https://user-images.githubusercontent.com/78966839/204132369-b0395292-4e72-49fc-b91f-1dcc3e38e159.png">
 
+## What is the quick sort?
 
+#### Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. For this reason, it is sometimes called partition-exchange sort.
 
+- It work on Pivot & partitition Apporch
 
+## pivot
+- **which is a somewhat arbitrary element in the collection.**
 
+<img width="306" alt="image" src="https://user-images.githubusercontent.com/78966839/204132359-eeccc36c-0e21-46ad-a3c0-fffec1157d31.png">
 
+- **Mostly we use last eleent to pivot**
+
+<img width="329" alt="image" src="https://user-images.githubusercontent.com/78966839/204132806-236466b3-c7bc-4ee2-a486-1266b6decc79.png">
 
 
 

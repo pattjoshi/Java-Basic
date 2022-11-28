@@ -192,6 +192,8 @@ public class QuickSort {
 }
 ```
 
+# Worst case in quick sort
+<img width="728" alt="image" src="https://user-images.githubusercontent.com/78966839/204318414-7a9abbbb-1531-4924-a9d5-ee5fc1ecf0fd.png">
 
 
 

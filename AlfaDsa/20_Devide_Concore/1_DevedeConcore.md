@@ -196,7 +196,22 @@ public class QuickSort {
 <img width="728" alt="image" src="https://user-images.githubusercontent.com/78966839/204318414-7a9abbbb-1531-4924-a9d5-ee5fc1ecf0fd.png">
 
 
+# Search in Rotated sorted array
 
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/78966839/204557464-e4e87c40-1300-453d-a0e8-01f3b4c50efd.png">
+
+## Approch
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/78966839/204558575-d0460805-8a21-48be-b168-78520bab4f47.png">
+
+<img width="767" alt="image" src="https://user-images.githubusercontent.com/78966839/204560930-4efa37e5-bf02-4114-bdb5-f2755f7fdd3e.png">
+
+### Case 1
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/78966839/204561746-82668770-3056-4e4b-b8f0-54f2a90bae5c.png">
+### Case 2
+
+<img width="782" alt="image" src="https://user-images.githubusercontent.com/78966839/204564475-b88c8aa5-0474-496f-bea6-e38389fb3eb0.png">
+
+<img width="750" alt="image" src="https://user-images.githubusercontent.com/78966839/204564962-eb6bd7db-fea7-465a-971a-f2c6d8ecef92.png">
 
 
 

@@ -257,12 +257,25 @@ public class SearchRotated {
 ```
 
 
+# Qus
+<img width="359" alt="image" src="https://user-images.githubusercontent.com/78966839/204787566-0b6372e4-0551-479b-970b-4afcd6dfabb6.png">
+
+<img width="380" alt="image" src="https://user-images.githubusercontent.com/78966839/204786994-181d9597-d574-477d-a263-18d6c29a0d61.png">
 
 
+# Solution 
+<img width="359" alt="image" src="https://user-images.githubusercontent.com/78966839/204787122-2a804c5e-e91c-44f5-af49-8b5a6be02748.png">
+<img width="347" alt="image" src="https://user-images.githubusercontent.com/78966839/204787662-d7446339-e354-4b00-86e7-76e3febc90eb.png">
+<img width="349" alt="image" src="https://user-images.githubusercontent.com/78966839/204787723-058c76f1-b1b0-4461-8160-d2397c5630c9.png">
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/78966839/204787779-75ae3dd5-323b-415f-928b-df0b15ca1182.png">
+<img width="337" alt="image" src="https://user-images.githubusercontent.com/78966839/204787823-b19d6ca9-f98f-4d81-ac6c-652be4ec8e7d.png">
+<img width="347" alt="image" src="https://user-images.githubusercontent.com/78966839/204787862-7cee068f-57f3-48dc-a914-6cc47d7ac18a.png">
+
+<img width="355" alt="image" src="https://user-images.githubusercontent.com/78966839/204787992-98db1257-20fb-4cb5-96be-33d1f32542d0.png">
+<img width="351" alt="image" src="https://user-images.githubusercontent.com/78966839/204788049-0523e5c0-d39a-44bc-ab64-ecc56f41845f.png">
 
 
-
-
+<img width="351" alt="image" src="https://user-images.githubusercontent.com/78966839/204788752-559ae550-cf4e-4f79-8404-b6c7d0e71a45.png">
 
 
 

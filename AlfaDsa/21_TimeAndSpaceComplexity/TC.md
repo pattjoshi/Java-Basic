@@ -11,6 +11,7 @@
 
 - Time and space complexity depends on lots of things like hardware, operating system, processors, etc. 
 
+<img width="373" alt="image" src="https://user-images.githubusercontent.com/78966839/205916479-24085180-216e-4865-8cc0-19358bda0e3f.png">
 
 
 

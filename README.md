@@ -1,7 +1,5 @@
 # Basic Java Practic
 
-- Nathing is commit
-
 # There is nothing loss and wasted in life.
 
 # Hard work + Consistency + Guidance -> Success

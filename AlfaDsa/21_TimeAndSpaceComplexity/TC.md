@@ -55,9 +55,12 @@
 
 - In Liner search linear relaction relaction is found.
 
-jjjjjjjjj
+## Constant Time Complexity
 
+<img width="621" alt="image" src="https://user-images.githubusercontent.com/78966839/207646991-ac66628e-abfe-4715-969e-a6b39c07b4a2.png">
 
+- Constant o(1)
+- **In sorted array allways largest and smallest time complexity is Constant.**
 
 
 

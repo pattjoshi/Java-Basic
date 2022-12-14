@@ -105,6 +105,29 @@
 
 <img width="705" alt="image" src="https://user-images.githubusercontent.com/78966839/207670387-fe6409fa-4bed-4b85-82cf-0b3d2fd8aab2.png">
 
+# Space complexity
+- Memory sore in 2 type
+- 1) Heap :- In Heap sore Object location
+- 2) Stack :- function call
+
+<img width="641" alt="image" src="https://user-images.githubusercontent.com/78966839/207682944-df4fb733-671f-484f-8899-786b49971800.png">
+
+<img width="730" alt="image" src="https://user-images.githubusercontent.com/78966839/207686349-16f2f214-75db-4788-97a2-f2433c921136.png">
+
+- Auxiliary space means Extra space
+- Space complixity most of time Auxilary.
+- In space complexity Marge sort is worst as compair to Quick sort
+- Most Time is Priority.
+
+
+
+
+
+
+
+
+
+
 
 
 

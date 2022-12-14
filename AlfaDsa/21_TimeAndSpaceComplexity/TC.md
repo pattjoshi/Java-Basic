@@ -63,7 +63,47 @@
 - **In sorted array allways largest and smallest time complexity is Constant.**
 
 
+# Big o Notation
 
+<img width="667" alt="image" src="https://user-images.githubusercontent.com/78966839/207657443-9e15323c-3de6-45dc-af31-faff2d7961b9.png">
+
+- We allways try to find **worst case** complexity.
+
+- Big o Notation gives Upper bond result
+- ex :- o(n),o(logn),o(n2)
+
+- **Upper Bound:- Time or Input size function max o( )**
+
+- Hear, Max TC is o(n2),code not run lower then the worst case time complexity.
+
+## How to find Tc in Bog o Motation ?
+- 1) Ignore constant
+- 2) Largest term
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/78966839/207660225-84c5466e-3be3-44b2-9258-0a0334dc4739.png">
+
+- Hear a , b  and c are contant.
+
+<img width="471" alt="image" src="https://user-images.githubusercontent.com/78966839/207663317-abf46534-a38a-47cf-b48a-bfb309f2e3a2.png">
+
+# Big Omega Notation
+- Big Omega Notation gives Lower Bound Notation.
+- Bast case TC
+
+<img width="597" alt="image" src="https://user-images.githubusercontent.com/78966839/207665883-eea97b89-a51b-4655-bb73-649a5bd81fac.png">
+
+- **Bog theta(Θ) :- Average case**
+
+# Common Complexiies
+
+- constant -o(1)
+- o(logn) worst the constant
+- o(n)- Lenier
+- expontial o(2n) worst case
+- expontial run smaller input.
+- recurshion mostly give expontial value.
+- **Input size is small use recurshion . TC -> expontial**
+
+<img width="705" alt="image" src="https://user-images.githubusercontent.com/78966839/207670387-fe6409fa-4bed-4b85-82cf-0b3d2fd8aab2.png">
 
 
 

@@ -119,8 +119,38 @@
 - In space complexity Marge sort is worst as compair to Quick sort
 - Most Time is Priority.
 
+# Theoretical Analusis
+<img width="448" alt="image" src="https://user-images.githubusercontent.com/78966839/207834989-5f1314dd-646f-4fab-99e4-40140ac52bf8.png">
+
+## Simple Loop Analysis
+
+- n -> Input size
+- Constant is Ignore
+
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/207836944-cb987913-da94-4ae6-9f84-9cb873074263.png">
 
 
+# Nested loop1 Analysis
+
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/78966839/207847662-ec6fda60-659c-45e9-809a-2f85886a40cb.png">
+
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/78966839/207848335-57a1a8b1-ed49-4385-b62e-875dfa39f25f.png">
+
+
+# Nested Loop2 Analysis
+
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/78966839/207841056-39570f35-78da-476c-8bee-1fbfcba627b7.png">
+## How we think
+- Hear,Outer loop run wher to where i =0 to n
+- Inner loop run 0 to i
+- First time 0 , second time 1 run up to n-1
+- Ap series , In ap series T.c n*2  so, tc is o(n*2)
+
+<img width="764" alt="image" src="https://user-images.githubusercontent.com/78966839/207841921-eed2aaaa-48be-4c96-937a-f3d28d12f91a.png">
+
+# Nested loop 3 Analysis
+- we look the jump Opter loop jump n/k time's
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/78966839/207856054-9a95ccde-dd2b-4ece-b7d9-39ecd9dcf642.png">
 
 
 

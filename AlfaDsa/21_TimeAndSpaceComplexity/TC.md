@@ -140,6 +140,7 @@
 # Nested Loop2 Analysis
 
 <img width="785" alt="image" src="https://user-images.githubusercontent.com/78966839/207841056-39570f35-78da-476c-8bee-1fbfcba627b7.png">
+
 ## How we think
 - Hear,Outer loop run wher to where i =0 to n
 - Inner loop run 0 to i

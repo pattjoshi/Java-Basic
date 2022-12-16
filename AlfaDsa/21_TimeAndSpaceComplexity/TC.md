@@ -153,8 +153,26 @@
 - we look the jump Opter loop jump n/k time's
 <img width="712" alt="image" src="https://user-images.githubusercontent.com/78966839/207856054-9a95ccde-dd2b-4ece-b7d9-39ecd9dcf642.png">
 
+# Babble sort Analysis
+
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/208031934-107b6bcd-88f8-4395-91eb-7cc7b79d19c1.png">
+
+### 2nd approch
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/208032183-220b39a9-efbc-4d1f-acb0-0a8ef8bb6507.png">
+
+# Babble sort Analysis Bast case
+
+- In Base same o(n*2)
+- if the array is already sorted Outer loop and inner loop performing task so T.C is not change.
+- we use Optimize Babble sort.
+
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/208033191-6e1614d0-d5ac-4b17-b83f-551fe7ad7a7a.png">
+<img width="254" alt="image" src="https://user-images.githubusercontent.com/78966839/208033688-9c3422f5-64ad-477b-8e05-6ff546b272c3.png">
 
 
+# Optimize Babble sort
+
+<img width="708" alt="image" src="https://user-images.githubusercontent.com/78966839/208035199-7505584d-e38e-4dd8-a3e8-1fd9c78d9008.png">
 
 
 

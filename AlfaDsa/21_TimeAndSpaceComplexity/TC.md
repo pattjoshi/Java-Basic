@@ -177,24 +177,62 @@
 <img width="708" alt="image" src="https://user-images.githubusercontent.com/78966839/208035199-7505584d-e38e-4dd8-a3e8-1fd9c78d9008.png">
 
 ---
-## Binary Search
+# Binary Search
 
 -Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half.
 
 <img width="777" alt="image" src="https://user-images.githubusercontent.com/78966839/209475038-c749eba8-d38c-4312-b61b-c03dd75d8e82.png">
 
+- for the big input size Binary search Good.
+
+<img width="772" alt="image" src="https://user-images.githubusercontent.com/78966839/209475243-2c0d6edc-41c8-48c1-a160-8828bc65ae7e.png">
+
+- Binary Search is **Efficent**
 
 
+<img width="457" alt="image" src="https://user-images.githubusercontent.com/78966839/209475346-e0e3607a-6fb0-4807-a70c-bb7a61b642e6.png">
+
+### Mathmaticaly Binary Search
+
+<img width="493" alt="image" src="https://user-images.githubusercontent.com/78966839/209475435-55729892-d893-4de6-a45a-fa1f591bda0b.png">
+
+# Recursive Algorithms
+
+<img width="742" alt="image" src="https://user-images.githubusercontent.com/78966839/209476059-e23e9397-76f4-427c-894e-8b485accbf0d.png">
 
 
+## Recurshion (factorial visualization)
+
+<img width="720" alt="image" src="https://user-images.githubusercontent.com/78966839/209476347-153379c3-d6cf-427d-b5c0-ecb650fe2f87.png">
+
+## Time Complexity
+<img width="472" alt="image" src="https://user-images.githubusercontent.com/78966839/209477033-4ce7d7e3-714d-4f38-8838-944343ecd444.png">
+
+## Space complexity
+
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/78966839/209477125-41b9c895-61df-41a5-8692-8a276300bbb3.png">
+
+## Factorial T.C and S.C
+
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/78966839/209477166-a6e9d2fc-cd8d-4ff2-b832-504080b47d93.png">
+
+# Sum of n (Recurshion) 
+
+- Stack and Tree Analysis
+
+<img width="665" alt="image" src="https://user-images.githubusercontent.com/78966839/209478346-b34e8be6-0183-4668-b449-5109ae9d4969.png">
+
+## Time Complexity
+<img width="636" alt="image" src="https://user-images.githubusercontent.com/78966839/209478420-e4e95646-936b-496d-a1f1-7297b24a5de4.png">
+
+## space Complexity
+
+<img width="203" alt="image" src="https://user-images.githubusercontent.com/78966839/209478463-5cb0c3a1-e334-42f4-bc69-6c27a74ca769.png">
 
 
+<img width="206" alt="image" src="https://user-images.githubusercontent.com/78966839/209478479-48120f0c-1d96-4874-bfa4-2674986e48b9.png">
 
-
-
-
-
-
+--- 
 
 
 

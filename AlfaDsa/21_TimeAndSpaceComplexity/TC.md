@@ -155,6 +155,8 @@
 
 # Babble sort Analysis
 
+-  Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.
+
 <img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/208031934-107b6bcd-88f8-4395-91eb-7cc7b79d19c1.png">
 
 ### 2nd approch
@@ -173,6 +175,22 @@
 # Optimize Babble sort
 
 <img width="708" alt="image" src="https://user-images.githubusercontent.com/78966839/208035199-7505584d-e38e-4dd8-a3e8-1fd9c78d9008.png">
+
+---
+## Binary Search
+
+-Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half.
+
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/78966839/209475038-c749eba8-d38c-4312-b61b-c03dd75d8e82.png">
+
+
+
+
+
+
+
+
+
 
 
 

@@ -250,6 +250,31 @@
 
 <img width="520" alt="image" src="https://user-images.githubusercontent.com/78966839/209513542-88458adb-e9a3-4f14-8211-d8fd67690518.png">
 
+---
+
+# Merge Sort 
+
+<img width="718" alt="image" src="https://user-images.githubusercontent.com/78966839/209548371-56cdaa46-c6fb-437e-918e-0561575e1a87.png">
+
+- In Mergesort function, merge T.C is also count.
+
+## Merge function T.c and S.c  o(n)
+
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/78966839/209549617-47253bdc-02b9-4204-8e03-7e4e8176af8d.png">
+
+## Merge sort recurant relation
+
+<img width="696" alt="image" src="https://user-images.githubusercontent.com/78966839/209551214-6b498eb7-ce6b-4ca8-a814-603b105a4ede.png">
+
+
+<img width="686" alt="image" src="https://user-images.githubusercontent.com/78966839/209554124-5decb33e-92ee-4f99-a8a7-c34add6f23f6.png">
+
+## T.C S.C OF MERGE SORT
+
+<img width="702" alt="image" src="https://user-images.githubusercontent.com/78966839/209554455-b78df98e-2e12-4d2e-84a1-83c92f636f9f.png">
+
+
+
 
 
 

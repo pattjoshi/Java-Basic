@@ -234,5 +234,24 @@
 
 --- 
 
+# Fibonacci Anallysis
+
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/78966839/209512281-915716a5-267e-4de8-9d7f-0d16df45b3a0.png">
+
+
+## Treee analysis
+<img width="679" alt="image" src="https://user-images.githubusercontent.com/78966839/209513167-24557307-adb0-43ce-86eb-8b9ff5301be4.png">
+
+<img width="229" alt="image" src="https://user-images.githubusercontent.com/78966839/209513250-809d0f8c-5b56-4dce-b6d1-79cd487c5cf3.png">
+
+<img width="322" alt="image" src="https://user-images.githubusercontent.com/78966839/209513348-13ab0be6-dac6-471d-b3de-a6007e57a21f.png">
+
+## T.C AND S.C COMPLEXITY OF FIBONACCI
+
+<img width="520" alt="image" src="https://user-images.githubusercontent.com/78966839/209513542-88458adb-e9a3-4f14-8211-d8fd67690518.png">
+
+
+
+
 
 

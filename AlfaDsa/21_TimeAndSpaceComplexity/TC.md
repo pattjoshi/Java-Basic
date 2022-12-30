@@ -273,10 +273,25 @@
 
 <img width="702" alt="image" src="https://user-images.githubusercontent.com/78966839/209554455-b78df98e-2e12-4d2e-84a1-83c92f636f9f.png">
 
+# Optimize Power Function
+
+<img width="448" alt="image" src="https://user-images.githubusercontent.com/78966839/210060236-4ea9e161-56ae-49ae-8bab-1afc66fbdd76.png">
+
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/78966839/210060394-d349c56c-0f1a-4c62-9e48-a7a153e5058e.png">
+
+# How to approch qustion ?
+<img width="715" alt="image" src="https://user-images.githubusercontent.com/78966839/210061298-52e7fa45-1977-4f91-9420-9ad3ac52f79a.png">
+
+<img width="680" alt="image" src="https://user-images.githubusercontent.com/78966839/210061524-b5305175-fd25-4de5-8292-cc58f120fbfc.png">
 
 
+# Time and space complisity qus
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/78966839/210062215-a0bf7254-e2ec-4dfe-b9d5-70f96ca46f15.png">
 
+<img width="364" alt="image" src="https://user-images.githubusercontent.com/78966839/210062231-0288466c-7290-4ead-893d-10056c5bfddd.png">
 
+# Time and space complisity Solution
 
+<img width="366" alt="image" src="https://user-images.githubusercontent.com/78966839/210062279-1572dacd-7955-4c8f-a554-784fcc2a9fcf.png">
 
 

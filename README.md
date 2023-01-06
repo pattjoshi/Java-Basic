@@ -4,7 +4,7 @@
 
 # Hard work + Consistency + Guidance -> Success
 
-<<<<<<< HEAD
+ HEAD
 [I Learn from Hear](https://www.programiz.com/java-programming/examples)
 
 ## Stape 1

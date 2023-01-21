@@ -329,6 +329,78 @@ public class MultiDeminShionArrayList {
 [[1, 2], [3, 4]]
 ```
 
+## Container with most water
+
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/78966839/213876572-d2a89da9-58ba-46d0-aa32-86fd28c3e138.png">
+
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/78966839/213877006-826dd8d3-22d8-4bec-8ac5-a9ec62352a67.png">
+
+# Brote force Approch
+
+- Possible pair find.
+
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/78966839/213877393-aabed0de-b628-48d5-a52f-93d772aa90d1.png">
+
+
+```
+import java.util.ArrayList;
+
+public class ContainMWBroteFor {
+    // Borte force approch of Contain max water
+    public static int StoreWater(ArrayList<Integer> height) {
+        int maxWater = 0;
+
+        for (int i = 0; i < height.size(); i++) {// 1st row
+            for (int j = i + 1; j < height.size(); j++) {
+                int ht = Math.min(height.get(i), height.get(j));
+                int width = j - i;
+                int currWater = ht * width;
+                maxWater = Math.max(maxWater, currWater);
+            }
+        }
+        return maxWater;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> hight = new ArrayList<>();
+        hight.add(1);
+        hight.add(8);
+        hight.add(6);
+        hight.add(2);
+        hight.add(5);
+        hight.add(4);
+        hight.add(8);
+        hight.add(3);
+        hight.add(7);
+
+        System.out.println("Contain with most water is " + StoreWater(hight));
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

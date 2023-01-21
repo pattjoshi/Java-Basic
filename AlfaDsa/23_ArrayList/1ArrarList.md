@@ -183,7 +183,7 @@ public class Swap2Num {
 }
 ```
 
-## Sorting an arrayList
+# Sorting an arrayList
 
 <img width="658" alt="image" src="https://user-images.githubusercontent.com/78966839/213864566-cb943c48-f1b5-41aa-aa30-27c19e438baf.png">
 
@@ -222,9 +222,112 @@ public class Sorting_ArrayList {
 // Interface :- Collaction
 ```
 
+# Implementation ArrayList
+
+<img width="667" alt="image" src="https://user-images.githubusercontent.com/78966839/213865112-20ec9b9e-2dfb-4a2e-94f7-035a6163b087.png">
+
+- Array List impliment Like an array.
+- it an array defind some loginc
+
+<img width="667" alt="image" src="https://user-images.githubusercontent.com/78966839/213865138-14518640-f6fa-40f6-810e-76d44c09b29e.png">
+
+- Initialy create an fix size array
+- List access this array and return the value
+
+<img width="707" alt="image" src="https://user-images.githubusercontent.com/78966839/213866752-3c1a7c74-58ff-429b-9556-09b1eec35680.png">
+
+- Java create intrnaly 2X size of this array. and copy that element in to new array. Old memory is deleted.
+
+# Multi-dimension ArrayList
+
+<img width="711" alt="image" src="https://user-images.githubusercontent.com/78966839/213867358-751c20ec-7462-41ba-a08e-785daadaddb5.png">
+
+## Code Ans
+
+```
+import java.util.ArrayList;
+
+public class MultiDeminShionArrayList {
+    public static void main(String[] args) {
+        // 2D array
+        ArrayList<ArrayList<Integer>> mainList = new ArrayList<>();
+
+        ArrayList<Integer> List = new ArrayList<>();
+        ArrayList<Integer> List2 = new ArrayList<>();
+        ArrayList<Integer> List3 = new ArrayList<>();
+
+        for (int i = 1; i < 5; i++) {
+            List.add(i * 1);
+            List2.add(i * 2);
+            List3.add(i * 3);
+        }
+        mainList.add(List);
+        mainList.add(List2);
+        mainList.add(List3);
+
+        System.out.println(mainList);
+
+        // Nested Loops
+        for (int i = 0; i < mainList.size(); i++) {
+            ArrayList<Integer> currList = mainList.get(i);
+            for (int j = 0; j < currList.size(); j++) {
+                System.out.print(currList.get(j) + " ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+```
+
+## O/p
+
+```
+[[1, 2, 3, 4], [2, 4, 6, 8], [3, 6, 9, 12]]
+1 2 3 4 
+2 4 6 8
+3 6 9 12
+```
 
 
+### Print 2D arrayList 
 
+```
+import java.util.ArrayList;
+
+public class MultiDeminShionArrayList {
+    public static void main(String[] args) {
+        // 2D array
+        ArrayList<ArrayList<Integer>> mainList = new ArrayList<>();
+
+        ArrayList<Integer> List = new ArrayList<>();
+        List.add(1);
+        List.add(2);
+        mainList.add(List);
+
+        ArrayList<Integer> List2 = new ArrayList<>();
+        List2.add(3);
+        List2.add(4);
+        mainList.add(List2);
+
+        for (int i = 0; i < mainList.size(); i++) {
+            ArrayList<Integer> current = mainList.get(i);
+            for (int j = 0; j < current.size(); j++) {
+                System.out.print(current.get(j) + " ");
+            }
+            System.out.println();
+        }
+        System.out.println(mainList);
+    }
+}
+```
+## O/p
+
+```
+1 2
+3 4
+[[1, 2], [3, 4]]
+```
 
 
 

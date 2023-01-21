@@ -150,9 +150,77 @@ public class Find_minimum {
 }
 ```
 
+# Swap 2 Number
 
+<img width="711" alt="image" src="https://user-images.githubusercontent.com/78966839/213864372-8572327f-9b47-42ae-bad6-65bb1372b7fe.png">
 
+```
 
+import java.util.ArrayList;
+
+public class Swap2Num {
+    public static void Swap(ArrayList<Integer> list, int idx1, int idx2) {
+        int temp = list.get(idx1);
+        list.set(idx1, idx2);
+        list.set(idx2, temp);
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(5);
+        list.add(9);
+        list.add(3);
+        list.add(6);
+
+        System.out.println("Before Swap" + list);
+
+        int idx1 = 1, idx2 = 3;
+        Swap(list, idx1, idx2);
+        System.out.println("Arter Swap" + list);
+
+    }
+}
+```
+
+## Sorting an arrayList
+
+<img width="658" alt="image" src="https://user-images.githubusercontent.com/78966839/213864566-cb943c48-f1b5-41aa-aa30-27c19e438baf.png">
+
+- Collections.sort :- Sort in assending order Default
+- Inbuild method
+- class :- Collactions
+- Interface :- Collaction
+
+```
+
+import java.util.ArrayList;
+import java.util.Collections;;
+
+public class Sorting_ArrayList {
+    public static void main(String[] args) {
+        ArrayList<Integer> lsit = new ArrayList<>();
+        lsit.add(2);
+        lsit.add(42);
+        lsit.add(88);
+        lsit.add(22);
+        lsit.add(12);
+
+        System.out.println("Before swap " + lsit);
+        Collections.sort(lsit);
+        System.out.println("Before swap " + lsit);
+        // Decending
+        Collections.sort(lsit, Collections.reverseOrder());
+        // Compariter -> logic defind
+        System.out.println("Decending order " + lsit);
+
+    }
+}
+// Collections.sort :- Sort in assending order Default
+// Inbuild method
+// class :- Collactions
+// Interface :- Collaction
+```
 
 
 

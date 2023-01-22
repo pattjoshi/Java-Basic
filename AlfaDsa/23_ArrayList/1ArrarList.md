@@ -345,7 +345,7 @@ public class MultiDeminShionArrayList {
 ```
 import java.util.ArrayList;
 
-public class ContainMWBroteFor {
+public class ContainMWBroteFor { // o(n^2)
     // Borte force approch of Contain max water
     public static int StoreWater(ArrayList<Integer> height) {
         int maxWater = 0;
@@ -378,25 +378,80 @@ public class ContainMWBroteFor {
 }
 ```
 
+# Container with most water 2 Pointer Approch
+
+- Takea a 2 variable Lp,Rp 
+- find current water
+
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/78966839/213902067-6b15776f-0e88-4e1e-8ccf-47983ab62bb6.png">
 
 
 
+<img width="532" alt="image" src="https://user-images.githubusercontent.com/78966839/213902156-a594e5cf-f684-4d53-b9ff-151496b173e2.png">
 
+## Logic
 
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/78966839/213902248-b7f320ed-373f-41e0-a1b6-69410d7dbdf7.png">
 
+- I have to use 2 Pointer,Set that at end.
+- calculate some work. Ex:- currWater ,Ht, width
+- Condiction check .
+- Loop run n time
+- Move Small Line 
 
+## Code  o(n)
 
+```
+import java.util.ArrayList;
 
+public class CountMaxWOPt {
 
+    // 2 Pointer Apperoch
+    public static int storeWater(ArrayList<Integer> height) {
+        int maxWater = 0;
+        int lp = 0;
+        int rp = height.size() - 1;
 
+        while (lp < rp) {
+            // Calculate
+            int ht = Math.min(height.get(lp), height.get(rp));
+            int width = rp - lp;
+            int currWater = ht * width;
+            maxWater = Math.max(maxWater, currWater);
 
+            // Update
+            if (height.get(lp) < height.get(rp)) {
+                lp++;
+            } else {
+                rp--;
+            }
+        }
+        return maxWater;
 
+    }
 
+    public static void main(String[] args) {
+        ArrayList<Integer> height = new ArrayList<>();
+        height.add(1);
+        height.add(8);
+        height.add(6);
+        height.add(2);
+        height.add(5);
+        height.add(4);
+        height.add(8);
+        height.add(3);
+        height.add(7);
 
+        System.out.println(storeWater(height));
 
+    }
+}
 
+```
 
+# How is this different then **Trapping Rainwater**
 
+<img width="680" alt="image" src="https://user-images.githubusercontent.com/78966839/213903705-80d2cccb-9fbf-4904-a741-ad54fd866231.png">
 
 
 

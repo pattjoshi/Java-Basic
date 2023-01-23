@@ -453,6 +453,64 @@ public class CountMaxWOPt {
 
 <img width="680" alt="image" src="https://user-images.githubusercontent.com/78966839/213903705-80d2cccb-9fbf-4904-a741-ad54fd866231.png">
 
+# pair sum 
+
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/78966839/214090435-12e1743e-4fa8-48c6-a7b1-4d84eaac290c.png">
+
+### Brote force
+```
+import java.util.ArrayList;
+
+public class PairSum {
+
+    public static boolean sumPair(ArrayList<Integer> list, int target) {
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = i + 1; j < list.size(); j++) {
+                if (list.get(i) + list.get(j) == target) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        int targrt = 5;
+        System.out.println(sumPair(list, targrt));
+
+    }
+}
+```
+
+#### o/p 
+
+```
+true
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

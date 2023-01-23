@@ -494,25 +494,139 @@ public class PairSum {
 true
 ```
 
+# 2 Pointer approch o(n)
+
+<img width="725" alt="image" src="https://user-images.githubusercontent.com/78966839/214097341-70b4f37c-b8a4-466e-a96b-84cf33ad6cf0.png">
+
+### Example
+
+#### case 2
+- if combine sum is Less then target value then go for larger value (Lp++)
+
+<img width="297" alt="image" src="https://user-images.githubusercontent.com/78966839/214099393-2d77dee9-d1f6-4c79-9358-9298899aa4fb.png">
+
+#### case 3
+
+<img width="333" alt="image" src="https://user-images.githubusercontent.com/78966839/214101997-50ef573c-576c-4b2e-9aa0-61c458bffbdb.png">
+
+### Logic
+
+<img width="366" alt="image" src="https://user-images.githubusercontent.com/78966839/214102453-e918c17d-fbe9-40e5-9074-5052290108f8.png">
+
+### Code
+
+```
+import java.util.ArrayList;
+
+public class PairSum {
+
+    public static boolean sumPair(ArrayList<Integer> list, int target) {
+        int lp = 0;
+        int rp = list.size() - 1;
+
+        while (lp != rp) {
+            if (list.get(lp) + list.get(rp) == target) {
+                return true;
+            } else if (list.get(lp) + list.get(rp) < target) {
+                lp++;
+            } else if (list.get(lp) + list.get(rp) > target) {
+                rp--;
+            }
+        }
+
+        return false;
+
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        // 1 2 3 4 5 6
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        int targrt = 5;
+        System.out.println(sumPair(list, targrt));
+
+    }
+}
+```
+# pair sum 2
+
+<img width="547" alt="image" src="https://user-images.githubusercontent.com/78966839/214108892-022b2e57-960d-4a15-b9ee-727197fda0a4.png">
+
+- 15 is Pivit point (beaking ) 
+
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/78966839/214109469-78bf23d9-52de-46d7-8c64-d88e321ab782.png">
+
+- lp = Small 
+- rp = large
+- Rotated increment using Moduler arithmetic operater
+
+<img width="755" alt="image" src="https://user-images.githubusercontent.com/78966839/214111324-78091d49-9e3a-45f9-ba57-acd421cb4fb0.png">
+
+### Dry run 
+
+- Step 1 :- find pivet 
+- pivet in i = 1;
+- lp = i+1 = 2 **(Initialy)**
+- rp = 1 **(Initialy)**
+
+<img width="765" alt="image" src="https://user-images.githubusercontent.com/78966839/214114255-9000559d-e1d1-41d5-9b58-36fcd4a4c321.png">
+
+## Code o(n)
 
 
+```
 
+import java.util.ArrayList;
 
+public class PairSum2 {
+    public static boolean PrintSum2(ArrayList<Integer> list, int target) {
+        int bp = -1;
+        int n = list.size();
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) < list.get(i + 1)) { // Break poing
+                bp = 1;
+                break;
+            }
+        }
+        int lp = bp + 1; // Smallest
+        int rp = bp; // largest element
+        while (lp != rp) {
+            // Case 1
+            if (list.get(lp) + list.get(rp) == target) {
+                return true;
+            }
+            // case 2
+            else if (list.get(lp) + list.get(rp) < target) {
+                lp = (lp + 1) % n;
+            }
+            // case 3
+            else if (list.get(lp) + list.get(rp) > target) {
+                rp = (n + rp - 1) % n;
+            }
+        }
+        return false;
 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        // 11,15,6,8,9,10 target
+        list.add(11);
+        list.add(15);
+        list.add(6);
+        list.add(8);
+        list.add(9);
+        list.add(10);
+        int target = 17;
+        System.out.println(PrintSum2(list, target));
+    }
+}
+```
 
 
 

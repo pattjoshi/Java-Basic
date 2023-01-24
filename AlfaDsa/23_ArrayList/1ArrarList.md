@@ -628,6 +628,52 @@ public class PairSum2 {
 }
 ```
 
+# Array List qus
+
+<img width="364" alt="image" src="https://user-images.githubusercontent.com/78966839/214287452-f1899da6-c9ec-4b07-a696-bfcf911347bf.png">
+
+<img width="359" alt="image" src="https://user-images.githubusercontent.com/78966839/214287534-518dfec9-1da5-4851-8e08-acf454dc8b5d.png">
+
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/78966839/214287494-5f74fa33-f5ff-4037-a98f-f63a78064b7d.png">
+
+
+# Array list Solution
+
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/78966839/214287185-10cf921d-5a4c-4972-b85d-a020b55a319a.png">
+
+<img width="352" alt="image" src="https://user-images.githubusercontent.com/78966839/214287236-9ea38e8d-66ff-4098-968c-f1a6dbb3899b.png">
+
+<img width="346" alt="image" src="https://user-images.githubusercontent.com/78966839/214287287-a1401ca0-9e4a-45be-b0a0-0b1809d78628.png">
+
+<img width="346" alt="image" src="https://user-images.githubusercontent.com/78966839/214287329-d1741a5f-1017-45c5-8dd1-5f46162623da.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -85,8 +85,8 @@ public class LinkedListClass { // crate a class LinkedListClass
 
     public static void main(String[] args) {
         LinkedListClass ll = new LinkedListClass();
-        ll.addFirst(1);
         ll.addFirst(2);
+        ll.addFirst(1);
       
     }
 }
@@ -99,14 +99,132 @@ public class LinkedListClass { // crate a class LinkedListClass
 
 <img width="414" alt="image" src="https://user-images.githubusercontent.com/78966839/214364545-bfa67d26-848e-49be-9638-372aca1b325f.png">
 
+# Add Last 
+
+- Add in last 
+- 
+
+```
+ // ADD Last node
+    public void addLast(int data) {
+        // stape 1 = create node
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = tell = newNode;
+        }
+        // step 2 newNode next = head
+        tell.next = newNode; // link
+
+        // step 3 - head = newNode
+        tell = newNode;
+    }
+```
+
+## Dry run
+
+<img width="765" alt="image" src="https://user-images.githubusercontent.com/78966839/214369465-b9646218-4d44-4abb-8d0b-6dd58d6dc087.png">
 
 
+# Print a Linked List
+
+<img width="639" alt="image" src="https://user-images.githubusercontent.com/78966839/214371240-cedb1ec3-fa66-4d73-934c-e86578a822a9.png">
+
+- Travers and print
+- null found stop
+- Head and tell not change , only temp is change
 
 
+<img width="376" alt="image" src="https://user-images.githubusercontent.com/78966839/214371574-8eff3cd6-b6a2-482b-b9b1-e64da4070848.png">
 
 
+```
+public class LinkedListClass { // crate a class LinkedListClass
+    // Linked list me node hona cha e ya , Node class
+    public static class Node {
+        int data;
+        Node next; // referance variable
 
+        public Node(int data) { // constructer
+            this.data = data;
+            this.next = null;
+        }
 
+    }
+
+    public static Node head;
+    public static Node tell;
+
+    // Add operaction
+    // Add first
+    public void addFirst(int data) {
+        // crate new node
+        Node newNode = new Node(data); // Object
+        if (head == null) { // If node is Empty
+            head = tell = newNode;
+            return;
+        }
+        // step 2 newNode next = head
+        newNode.next = head; // link
+
+        // step 3 - head = newNode
+        head = newNode;
+    }
+
+    // ADD Last node
+    public void addLast(int data) {
+        // stape 1 = create node
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = tell = newNode;
+        }
+        // step 2 newNode next = head
+        tell.next = newNode; // link
+
+        // step 3 - head = newNode
+        tell = newNode;
+    }
+
+    // Print Linked List
+    public void print() {
+        if (head == null) {
+            System.out.println("LL is empty"); // Stating part
+            return;
+        }
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        LinkedListClass ll = new LinkedListClass();
+        ll.print();
+        ll.addFirst(1);
+        ll.print();
+        ll.addFirst(2);
+        ll.print();
+        ll.addLast(4);
+        ll.print();
+        ll.addLast(3);
+        ll.print();
+
+    }
+}
+
+// Method :- do some operaction we use menthod
+```
+
+### O/p 
+
+```
+LL is empty
+1->
+2->1->
+2->1->4->
+2->1->4->3->
+```
 
 
 

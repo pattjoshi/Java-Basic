@@ -225,16 +225,49 @@ LL is empty
 2->1->4->
 2->1->4->3->
 ```
+# Add in Middle
 
+<img width="363" alt="image" src="https://user-images.githubusercontent.com/78966839/214477834-11a6b333-9a10-4b58-bb3d-5eeb310806a2.png">
 
+- if new node is added to mideele. then
+- 0th node pointing to new node and new node point 1st node.
 
+- **Now index are chanhe**
+- T.c is :- constant
 
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/78966839/214478260-3f1e2b8e-82b5-4a91-9a6e-7c7c32ca0b6f.png">
 
+## add index 2 data 3 in middle
+- Take tmep = head
+- Insett in Idx-1
+- Then i create new node , it automaticaly change the Index.
 
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/78966839/214479145-3754c44e-b369-4789-a2ad-b581dff84833.png">
 
+## Code 
 
+```
+   // add in Middle
+    public void add(int idx, int data) {
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i = 0;
 
+        while (i < idx - 1) {
+            temp = temp.next;
+            i++;
+        }
+        // i = idx-1;temp -> prev
+        newNode.next = temp.next;
+        temp.next = newNode;
 
+    }
+```
+## o/p
+
+```
+1->2->9->4->3->
+```
 
 
 

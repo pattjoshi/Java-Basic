@@ -386,8 +386,38 @@ Size of Linked list is : 5
     }
 ```
 
+# Remove Last
+
+- find privous node and initial null 
+- tell = privius
+
+<img width="738" alt="image" src="https://user-images.githubusercontent.com/78966839/214495580-afe7dde8-d9cb-41cd-9f93-b26811b95240.png">
 
 
+```
+   // Remove last
+    public int removeLast() {
+        if (size == 0) {
+            System.out.println("LL is empty");
+            return Integer.MIN_VALUE;
+        } else if (size == 1) {
+            int val = head.data;
+            head = tell = null;
+            size = 0;
+            return val;
+        }
+        // prev : i = size -2
+        Node prev = head;
+        for (int i = 0; i < size - 2; i++) {
+            prev = prev.next;
+        }
+        int val = prev.next.data; // tell.data
+        prev.next = null;
+        tell = prev;
+        size--;
+        return val;
+    }
+```
 
 
 

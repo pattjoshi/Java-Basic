@@ -247,9 +247,77 @@ LL is empty
 ## Code 
 
 ```
-   // add in Middle
-    public void add(int idx, int data) {
+public class LinkedListClass { // crate a class LinkedListClass
+    // Linked list me node hona cha e ya , Node class
+    public static class Node {
+        int data;
+        Node next; // referance variable
+
+        public Node(int data) { // constructer
+            this.data = data;
+            this.next = null;
+        }
+
+    }
+
+    public static Node head;
+    public static Node tell;
+    public static int size;
+
+    // Add operaction
+    // Add first
+    public void addFirst(int data) {
+        // crate new node
+        Node newNode = new Node(data); // Object
+        size++;
+        if (head == null) { // If node is Empty
+            head = tell = newNode;
+            return;
+        }
+        // step 2 newNode next = head
+        newNode.next = head; // link
+
+        // step 3 - head = newNode
+        head = newNode;
+    }
+
+    // ADD Last node
+    public void addLast(int data) {
+        // stape 1 = create node
         Node newNode = new Node(data);
+        size++;
+        if (head == null) {
+            head = tell = newNode;
+        }
+        // step 2 newNode next = head
+        tell.next = newNode; // link
+
+        // step 3 - head = newNode
+        tell = newNode;
+    }
+
+    // Print Linked List
+    public void print() {
+        if (head == null) {
+            System.out.println("LL is empty"); // Stating part
+            return;
+        }
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+    // add in Middle
+    public void add(int idx, int data) {
+        if (idx == 0) {
+            addFirst(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        size++; //
         Node temp = head;
         int i = 0;
 
@@ -262,12 +330,76 @@ LL is empty
         temp.next = newNode;
 
     }
+
+    public static void main(String[] args) {
+        LinkedListClass ll = new LinkedListClass();
+        ll.addFirst(2);
+        ll.addFirst(1);
+        ll.addLast(4);
+        ll.addLast(5);
+        ll.add(2, 3);
+
+        ll.print();
+        System.out.println("Size of Linked list is : " + ll.size);
+
+    }
+}
+
+// Method :- do some operaction we use menthod
 ```
-## o/p
+
+### o/p
 
 ```
-1->2->9->4->3->
+1->2->3->4->5->
+Size of Linked list is : 5
 ```
+
+# Remove linked linst
+
+# Remove first
+- first node is remove and second node is become Head.
+- first node delete by garbage collacter
+
+<img width="706" alt="image" src="https://user-images.githubusercontent.com/78966839/214484567-091acfe6-1e43-48d5-891c-ea11080e1757.png">
+
+- **head node poin to next.head**
+
+<img width="319" alt="image" src="https://user-images.githubusercontent.com/78966839/214484915-eddc6d12-a989-4f1e-8b24-51b270c51e7c.png">
+
+
+```
+  // Remove first
+    public int revoveFirst() {
+        if (size == 0) {
+            System.out.println("LL is empty");
+        } else if (size == 1) { // return head = null and tell null
+            int val = head.data;
+            head = tell = null;
+            size = 0;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+    }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

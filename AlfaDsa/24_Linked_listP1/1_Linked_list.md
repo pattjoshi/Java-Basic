@@ -418,9 +418,37 @@ Size of Linked list is : 5
         return val;
     }
 ```
+# Iterative Search
+
+- Secarch for a key in a liked list. reurn the position where it is found.if not found return -1.
+
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/78966839/214801587-8513a0cb-d321-4455-b77e-a342c879f9e7.png">
+- take a temp variable and initial awith head.
+- iterater
+- lenearly search end
+- if key found return i
+- then store next value in temp
+- i++
+- not found return -1;
 
 
+```
+    // Iterative search
+    public static int iterSearch(int key) {
+        Node temp = head;
+        int i = 0;
+        while (temp != null) {
+            if (temp.data == key) {
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        // key is not found
+        return -1;
 
+    }
+```
 
 
 

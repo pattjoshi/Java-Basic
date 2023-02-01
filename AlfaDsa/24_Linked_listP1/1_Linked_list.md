@@ -450,10 +450,28 @@ Size of Linked list is : 5
     }
 ```
 
+# reverse a linked list o(n)
 
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/78966839/216109308-9afd126f-abb3-4c65-bdf2-0489e3e8f3e4.png">
 
+```
+    public void reverses() {
+        Node prev = null;  // 3 veriable
+        Node curr = tell = head;
+        Node next;
+        while (curr != null) {
+            next = curr.next; // 4 stape
+            // Current pointing to Privius
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
 
+    }
+```
 
+# [remove-nth-node-from-end-of-list](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 
 

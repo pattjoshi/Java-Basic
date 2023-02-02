@@ -473,6 +473,49 @@ Size of Linked list is : 5
 
 # [remove-nth-node-from-end-of-list](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
+- Linkin last 4th to 2nd node 3rd node automaticaly delete.
+
+- (size-n+1) start th node.
+
+<img width="705" alt="image" src="https://user-images.githubusercontent.com/78966839/216383884-3932e72e-e627-46a5-97df-366610e076a8.png">
+
+<img width="722" alt="image" src="https://user-images.githubusercontent.com/78966839/216382737-32fa36d8-2685-40dd-aab1-d627213281ae.png">
+
+```
+    public void deleteNthfromEnd(int n) {
+        // calculate size
+        int sz = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            sz++;
+        }
+        if (n == sz) {
+            head = head.next; // remove first
+            return;
+        }
+        // sz - n +1
+        int i = 1;
+        int iToFind = sz - n;
+        Node Priv = head;
+        while (i < iToFind) {
+            Priv = Priv.next;
+            i++;
+        }
+        Priv.next = Priv.next.next;
+        return;
+    }
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
